@@ -1,0 +1,116 @@
+const presence = new Presence({
+  clientId: "561662293004255242"
+});
+const presenceData: PresenceData = {
+  largeImageKey: "logo"
+};
+
+presence.on("UpdateData", async () => {
+  const startTimestamp: number = Date.now();
+  presenceData.startTimestamp = startTimestamp;
+  switch (
+    document.location.pathname.endsWith("/") &&
+    document.location.pathname.length > 1
+      ? document.location.pathname.slice(
+          0,
+          document.location.pathname.length - 1
+        )
+      : document.location.pathname
+  ) {
+    case "/":
+      presenceData.details = "Loading TFWF...";
+      break;
+    case "/ray":
+      presenceData.details = "Ray";
+      break;
+    case "/ray_2":
+      presenceData.details = "Ray 2";
+      break;
+    case "/beakins_great_mango_quest":
+      presenceData.details = "Beakin's Great Mango Quest";
+      break;
+    case "/big_battle_tanks":
+      presenceData.details = "Big Battle Tanks";
+      break;
+    case "/breaking_the_bank":
+      presenceData.details = "Breaking the Bank";
+      break;
+    case "days_of_monsters":
+      presenceData.details = "Days of Monsters";
+      break;
+    case "/escaping_the_prison":
+      presenceData.details = "Escaping the Prison";
+      break;
+    case "/fleeing_the_complex":
+      presenceData.details = "Fleeing the Complex";
+      break;
+    case "/heli_racer":
+      presenceData.details = "Heli Racer";
+      break;
+    case "/hot_dog_bush":
+      presenceData.details = "Hot Dog Bush";
+      break;
+    case "/infiltrating_the_airship":
+      presenceData.details = "Infiltrating the Airship";
+      break;
+    case "/mining_truck_2":
+      presenceData.details = "Mining Truck 2";
+      break;
+    case "/penguin_diner":
+      presenceData.details = "Penguin Diner";
+      break;
+    case "/penguin_diner_2":
+      presenceData.details = "Penguin Diner 2";
+      break;
+    case "/stealing_the_diamond":
+      presenceData.details = "Stealing the Diamond";
+      break;
+    case "/stoneage_sam":
+      presenceData.details = "Stonage Sam";
+      break;
+    case "/stoneage_sam_2":
+      presenceData.details = "Stoneage Sam 2";
+      break;
+    case "/stunt_master":
+      presenceData.details = "Stunt Master";
+      break;
+    case "/the_kitchen_of_doom":
+      presenceData.details = "The Kitchen of Doom";
+      break;
+    case "/westerado":
+      presenceData.details = "Westerado";
+      break;
+            
+  }
+
+  if (document.location.pathname.slice(1).startsWith("of")) {
+    presenceData.details = document
+      .querySelector("#content > h3")
+      .textContent.trim();
+  } else if (document.location.pathname.slice(1).startsWith("saved")) {
+    if (!document.querySelector("#content > p")) {
+      presenceData.details = "My saved funs";
+    }
+  } else if (document.location.pathname.slice(1).startsWith("voteof")) {
+    if (!document.querySelector("#content > p")) {
+      presenceData.details = "My funned funs";
+    }
+  } else if (!isNaN(parseInt(document.location.pathname.slice(1)))) {
+    const author = document
+      .querySelector(
+        "#content > div > table > tbody > tr > td > div > .blur a > b"
+      )
+      .textContent.trim();
+    presenceData.details = `Viewing ${author}'s fun`;
+  } else if (document.location.pathname.slice(1).startsWith("legendary")) {
+    presenceData.details = "Viewing the most legendary fun";
+  } else if (document.location.pathname.slice(1).startsWith("search")) {
+    const query = document.location.pathname.slice(
+      10,
+      document.location.pathname.length
+    );
+    presenceData.details = "Searching fun:";
+    presenceData.state = query;
+  }
+  presence.setActivity(presenceData);
+});
