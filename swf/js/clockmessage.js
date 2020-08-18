@@ -1,9 +1,8 @@
 var date=new Date();
 var month=date.getMonth();
 var day=date.getDate();
-function SetDivContent() {
-    setInterval(SetDivContent, 10000);
-    var div=document.getElementById('date_dependent');
+function SetDivContent(delay=2000) {
+    var div=document.getElementById('splash');
     if (month==11) {
         if (day==18) {
             div.innerHTML='Happy Birthday Nemu!';
