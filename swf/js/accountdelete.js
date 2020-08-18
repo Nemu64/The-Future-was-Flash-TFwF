@@ -12,7 +12,7 @@ function init() {
 					setTimeout(function() {
 						h1.innerHTML = "Reall";
 						setTimeout(function() {
-							h1.innerHTML = "Really ";
+							h1.innerHTML = "Really";
 							setTimeout(function() {
 								h1.innerHTML = "Really d";
 								setTimeout(function() {
@@ -24,7 +24,7 @@ function init() {
 											setTimeout(function() {
 												h1.innerHTML = "Really delet";
 												setTimeout(function() {
-													h1.innerHTML = "Really delete ";
+													h1.innerHTML = "Really delete";
 													setTimeout(function() {
 														h1.innerHTML = "Really delete y";
 														setTimeout(function() {
@@ -93,7 +93,7 @@ function cont() {
 					setTimeout(function() {
 						h1.innerHTML = "Once y";
 						setTimeout(function() {
-							h1.innerHTML = "Once yo ";
+							h1.innerHTML = "Once yo";
 							setTimeout(function() {
 								h1.innerHTML = "Once you";
 								setTimeout(function() {
