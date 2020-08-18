@@ -1,10 +1,7 @@
 var date=new Date();
 var month=date.getMonth();
 var day=date.getDate();
-function datedependent() {
-setTimeout(datedependent2, 0);
-}
-function datedependent2(){
+function datedependent(){
     var div=document.getElementById('splash');
     if (month==11) {
         if (day==18) {
@@ -12,6 +9,9 @@ function datedependent2(){
         }
         else if (day==25) {
             div.innerHTML='Merry Christmas!';
+        }
+        else if (day==31) {
+            div.innerHTML='Happy New Year’s Eve!';
         }
     }
     else if (month==06) {
