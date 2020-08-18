@@ -1,8 +1,10 @@
 var date=new Date();
 var month=date.getMonth();
 var day=date.getDate();
-setTimeout(SetDivContent, 2000);
-function SetDivContent(){
+function datedependent() {
+setTimeout(datedependent2, 2000);
+}
+function datedependent2(){
     var div=document.getElementById('splash');
     if (month==11) {
         if (day==18) {
