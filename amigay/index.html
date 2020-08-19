@@ -10,15 +10,16 @@ Are you gay? Let's find out!
 
 <script>
     function gay() {
-    var gayness = ['Yes, you are gay.', 'No, you are not gay.']
+    var gayness = ['Yes, you are gay.', 'No, you are not gay.'];
     var length = gayness.length;
     var rand = Math.round(Math.random()*(length - 1));
     var gayboi = document.getElementById('gayrating');
     gayrating.innerHTML=(gayness[rand]);
-    gaybutton.innerHTML=('<button type='button' onclick='doit()'>Measure my gayness</button>');
+    gaybutton.innerHTML=("<button type='button' onclick='doit()'>Measure my gayness</button>");
     }
     function doit() {
-    doover.innerHTML=('Sorry, no do overs!');
+    var dit = document.getElementById('doover');
+    dit.innerHTML=('Sorry, no do overs!');
     }
 </script>
 <style>
