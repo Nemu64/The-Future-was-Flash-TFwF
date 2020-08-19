@@ -5,7 +5,8 @@
 Are you gay? Let's find out!
 
 <div id='gayrating'></div>
-<button type='button' onclick='gay()'>Measure my gayness</button>
+<div id='doover'></div>
+<div id=gaybutton><button type='button' onclick='gay()'>Measure my gayness</button></div>
 
 <script>
     function gay() {
@@ -13,7 +14,11 @@ Are you gay? Let's find out!
     var length = gayness.length;
     var rand = Math.round(Math.random()*(length - 1));
     var gayboi = document.getElementById('gayrating');
-    gayrating.innerHTML=(gayness[rand]);   
+    gayrating.innerHTML=(gayness[rand]);
+    gaybutton.innerHTML=('<button type='button' onclick='doit()'>Measure my gayness</button>')   
+    }
+    function doit() {
+    doover.innerHTML=('Sorry, no do overs!')
     }
 </script>
 <style>
