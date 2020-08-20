@@ -1,4 +1,22 @@
 var dev = document.getElementById('dev');
+var button = document.getElementById('button');
 function oneclick() {
-    dev.innerHTML='You are 4 steps away from becoming a developer!'
+    dev.innerHTML='You are 4 steps away from becoming a developer!';
+    button.innerHTML='<button class="button" onclick="oneclick2()">ver. 3.6.5</button>';
+}
+function oneclick2() {
+    dev.innerHTML='You are 3 steps away from becoming a developer!';
+    button.innerHTML='<button class="button" onclick="oneclick3()">ver. 3.6.5</button>';
+}
+function oneclick3() {
+    dev.innerHTML='You are 2 steps away from becoming a developer!';
+    button.innerHTML='<button class="button" onclick="oneclick4()">ver. 3.6.5</button>';
+}
+function oneclick4() {
+    dev.innerHTML='You are 1 step away from becoming a developer!';
+    button.innerHTML='<button class="button" onclick="oneclick5()">ver. 3.6.5</button>';
+}
+function oneclick5() {
+    dev.innerHTML='You are now a developer!';
+    button.innerHTML='<button class="button" disabled=true onclick="oneclick()">ver. 3.6.5</button>';
 }
