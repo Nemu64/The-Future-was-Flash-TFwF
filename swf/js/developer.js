@@ -18,5 +18,9 @@ function oneclick4() {
 }
 function oneclick5() {
     dev.innerHTML='You are now a developer!';
-    button.innerHTML='<button class="button" disabled=true onclick="oneclick()">ver. 3.6.5</button>';
+    button.innerHTML='<button class="button" onclick="oneclick6()">ver. 3.6.5</button>';
+}
+function oneclick6() {
+    dev.innerHTML="No need, you're already now a developer!";
+    button.innerHTML='<button class="button" disabled=true onclick="oneclick6()">ver. 3.6.5</button>';
 }
