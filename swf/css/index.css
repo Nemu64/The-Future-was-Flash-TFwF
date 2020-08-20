@@ -56,13 +56,11 @@ nsfwzoneend{
     text-align: center;
     color: red;
   }
-fs{
-    color: lime;
-    font-size: medium;
-    font-weight: inherit;
-}
-parenth{
+button{
+    border: none;
     color: white;
+    text-align: center;
+    text-decoration: none;
     font-size: medium;
-    font-weight: inherit;
-}
+    font-weight: bold;
+  }
