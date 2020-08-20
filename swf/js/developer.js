@@ -17,10 +17,10 @@ function oneclick4() {
     button.innerHTML='<button class="button" onclick="oneclick5()">ver. 3.6.5</button>';
 }
 function oneclick5() {
-    dev.innerHTML='You are now a developer! <a href="/developer"><span style=color:white>Developer mode.</span></a>';
+    dev.innerHTML='You are now a developer! <a href="/developer"><span style=color:white>Developer mode</span></a>.';
     button.innerHTML='<button class="button" onclick="oneclick6()">ver. 3.6.5</button>';
 }
 function oneclick6() {
-    dev.innerHTML='No need, you’re already a developer! <a href="/developer"><span style=color:white>Developer mode.</span></a>';
+    dev.innerHTML='No need, you’re already a developer! <a href="/developer"><span style=color:white>Developer mode</span></a>.';
     button.innerHTML='<button class="button" disabled=true onclick="oneclick6()">ver. 3.6.5</button>';
 }
