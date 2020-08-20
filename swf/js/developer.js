@@ -1,5 +1,5 @@
 var dev = document.getElementById('dev');
-var button = document.getElementById('button');
+var button = document.getElementById('ver');
 function oneclick() {
     dev.innerHTML='You are 4 steps away from becoming a developer!';
     button.innerHTML='<button class="button" onclick="oneclick2()">ver. 3.6.5</button>';
