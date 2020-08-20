@@ -56,12 +56,11 @@ nsfwzoneend{
     text-align: center;
     color: red;
   }
-button{
+.button {
     border: none;
     color: white;
     background-color: black;
     text-align: center;
     text-decoration: none;
     font-size: medium;
-    font-weight: bold;
   }
