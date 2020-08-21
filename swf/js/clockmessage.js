@@ -1,7 +1,10 @@
 var date=new Date();
 var month=date.getMonth();
 var day=date.getDate();
-function datedependent(){
+function datedependent() {
+    setTimeout(datedependent2, 300);
+}
+function datedependent2() {
     var div=document.getElementById('splash');
     if (month==11) {
         if (day==18) {
