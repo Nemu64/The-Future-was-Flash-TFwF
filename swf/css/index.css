@@ -58,6 +58,7 @@ nsfwzoneend{
   }
 .button{
     border: none;
+    display: inline-block;
     color: white;
     background-color: black;
     text-align: center;
