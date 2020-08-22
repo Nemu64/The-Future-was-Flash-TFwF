@@ -64,6 +64,7 @@ nsfwzoneend{
     text-decoration: none;
     font-size: medium;
     font-weight: bold;
+    align-content: right;
 }
 .heart {
   background-color: transparent;
