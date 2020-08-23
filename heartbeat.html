@@ -1,46 +1,28 @@
-<style>
-.heart {
-  background-color: transparent;
-  display: inline-block;
-  position: relative;
-  animation: animateHeart 1.2s infinite;
+<script>
+navigator.connection.addEventListener('change', logNetworkInfo);
+
+function logNetworkInfo() {
+  // Network type that browser uses
+  log('         type: ' + navigator.connection.type);
+
+  // Effective bandwidth estimate
+  log('     downlink: ' + navigator.connection.downlink + 'Mb/s');
+
+  // Effective round-trip time estimate
+  log('          rtt: ' + navigator.connection.rtt + 'ms');
+
+  // Upper bound on the downlink speed of the first network hop
+  log('  downlinkMax: ' + navigator.connection.downlinkMax + 'Mb/s');
+
+  // Effective connection type determined using a combination of recently
+  // observed rtt and downlink values: ' +
+  log('effectiveType: ' + navigator.connection.effectiveType);
   
-  &::before, &::after {
-    content: "";
-    width: 50px;
-    height: 50px;
-    background-color: #fff;
-    position: absolute;
-    border-radius: 50%;
-  }
-  
-  &::before {
-    left: -25px;
-  }
-  
-  &::after {
-    top: -25px;
-  }
+  // True if the user has requested a reduced data usage mode from the user
+  // agent.
+  log('     saveData: ' + navigator.connection.saveData);
 }
-@keyframes animateHeart {
-  0% {
-    transform: scale(0.8);
-  }
-  5% {
-    transform: scale(0.9);
-  }
-  10% {
-    transform: scale(0.8);
-  }
-  15% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(0.8);
-  }
-  100% {
-    transform: scale(0.8);
-  }
-}
-</style>
-Flash - <div class="heart">❤️</div> - The heartbeat of IPXF
+
+logNetworkInfo();
+</script>
+Hello world!
