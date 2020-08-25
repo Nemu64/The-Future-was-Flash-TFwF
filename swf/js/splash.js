@@ -11,5 +11,5 @@ splashes.innerHTML=(quotes[rand]);
 function spin() {
     var spinner = document.getElementById('style');
     spinner.innerHTML = '<link rel=stylesheet href="/swf/css/roll.css">';
-    setTimeout('spinner.innerHTML = "<link rel=stylesheet href=\"/swf/css/roll.css\">"', 4500);
+    setTimeout('spinner.innerHTML = "<link rel=stylesheet href=/swf/css/index.css>"', 4500);
 }
