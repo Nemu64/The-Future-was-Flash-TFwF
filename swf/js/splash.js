@@ -5,5 +5,10 @@ var length = quotes.length;
 var rand = Math.round(Math.random()*(length - 1));
 
 var splashes = document.getElementById('splash');
-splash.innerHTML=(quotes[rand]);
+splashes.innerHTML=(quotes[rand]);
+}
+
+function spin() {
+    var spinner = document.getElementById('style');
+    spinner.innerHTML = '<link rel=stylesheet href="/swf/css/index.css">';
 }
