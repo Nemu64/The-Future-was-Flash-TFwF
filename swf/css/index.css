@@ -28,8 +28,8 @@ sngerr{
       -webkit-transform: scale(1.1);
       transform: scale(1.1);
     }
-  }
-  .hvr-pulse-grow {
+}
+.hvr-pulse-grow {
     display: inline-block;
     vertical-align: middle;
     -webkit-transform: perspective(1px) translateZ(0);
@@ -45,19 +45,16 @@ sngerr{
     animation-iteration-count: infinite;
     -webkit-animation-direction: alternate;
     animation-direction: alternate;
-  }
+}
 nsfwzonestart{
     border-top: 3px solid red;
     text-align: center;
     color: red;
-  }
+}
 nsfwzoneend{
     border-bottom: 3px solid red;
     text-align: center;
     color: red;
-  }
-clockandfriends {
-  text-align: inherit;d
 }
 .button{
     border: none;
