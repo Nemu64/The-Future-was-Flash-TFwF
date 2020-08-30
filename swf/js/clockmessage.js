@@ -2,7 +2,7 @@ var date=new Date();
 var month=date.getMonth();
 var day=date.getDate();
 function datedependent() {
-    setTimeout(datedependent2, 300);
+    setTimeout(datedependent2, 100);
 }
 function datedependent2() {
     var div=document.getElementById('splash');
