@@ -4,5 +4,3 @@ var length = quotes.length;
 var rand = Math.round(Math.random()*(length - 1));
           
 document.write(quotes[rand]);
-
-console.log('Tried to read nonexistent data!');
