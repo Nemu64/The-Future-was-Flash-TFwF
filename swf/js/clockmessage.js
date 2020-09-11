@@ -2,7 +2,7 @@ var date=new Date();
 var month=date.getMonth();
 var day=date.getDate();
 function datedependent() {
-    setTimeout(datedependent2, 50);
+    setTimeout(datedependent2, 5);
 }
 function datedependent2() {
     var div=document.getElementById('splash');
@@ -56,6 +56,9 @@ function datedependent2() {
     else if (month==8) { /*September*/
         if (day==11) {
             div.innerHTML='Never Forget!';
+        }
+        if (day==29) {
+            div.innerHTML='Happy Birthday Nana!';
         }
     }
     else if (month==9) { /*October*/
