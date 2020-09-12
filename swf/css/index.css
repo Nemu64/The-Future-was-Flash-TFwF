@@ -19,6 +19,7 @@ html{
 table, th, td {
   border: 1px solid white !important;
   border-spacing: 0px;
+  width: auto;
 }
 footer{
     margin-top: 50px;
