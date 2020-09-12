@@ -18,7 +18,6 @@ html{
 }
 table, th, td {
   border: 1px solid white !important;
-  width: 100%;
 }
 footer{
     margin-top: 50px;
