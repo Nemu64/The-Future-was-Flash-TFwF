@@ -16,6 +16,9 @@ html{
     font-size: xx-large;
     font-weight: bold;
 }
+table, th, td {
+  border: 1px solid white;
+}
 footer{
     margin-top: 50px;
     font-size: medium;
