@@ -7,7 +7,7 @@
   src: url(/swf/fonts/verdanab.ttf);
   font-weight: bold;
 }
-html{
+html {
     background-color: black;
     color: white;
     text-align: center;
@@ -21,12 +21,12 @@ table, th, td {
   border-spacing: 0px;
   width: auto;
 }
-footer{
+footer {
     margin-top: 50px;
     font-size: medium;
     font-family: 'Verdana', sans-serif;
 }
-sngerr{
+sngerr {
     margin-top: 50px;
     font-size: inherit;
     font-family: 'Verdana', sans-serif;   
