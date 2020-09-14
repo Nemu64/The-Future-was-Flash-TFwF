@@ -108,18 +108,25 @@ Hee hee hee.
 <footer>
     The Future was Flash - An IPXF Project - Site, Copyright © 2020 Perfect Technologies LLC
     <br>Flash - <div class="heart">❤️</div> - The heartbeat of IPXF
-    <br><a href="/swf/about.html"><span style=color:white>About</span></a> | <a href="/swf/credits.html"><span style=color:white>Credits</span></a> | <a href="mailto:nemu@nemu64.org"><span style=color:white>Contact</span></a><br><div id="clock"></div><span style="text-align: right;"><div id='dev'></div><div id='ver'><button class="button" onclick="oneclick()">ver. 5.0.0</button></div></span>
+    <br><a href="/swf/about.html"><span style=color:white>About</span></a> | <a href="/swf/credits.html"><span style=color:white>Credits</span></a> | <a href="mailto:nemu@nemu64.org"><span style=color:white>Contact</span></a><br><div id="clock"></div><span style="text-align: right;"><div id='dev'></div><div id='ver'><button class="button" onclick="oneclick()">ver. 5.7.4</button></div></span>
 </footer>
 </html>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-160620472-5"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-160620472-5');
+<!-- Matomo -->
+<script type="text/javascript">
+  var _paq = window._paq = window._paq || [];
+  _paq.push(["setCookieDomain", "*.ipxforever.com"]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//ipxforever.com/developer/analytics/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
 </script>
+<noscript><p><img src="//ipxforever.com/developer/analytics/matomo.php?idsite=1&amp;rec=1" style="border:0;" alt="" /></p></noscript>
+<!-- End Matomo Code -->
 <script src="/swf/js/splash.js" type="text/javascript" charset="UTF-8"></script>
 <script src="/swf/js/clock.js" type="text/javascript" charset="UTF-8"></script>
 <script src="/swf/js/clockmessage.js" type="text/javascript" charset="UTF-8"></script>
