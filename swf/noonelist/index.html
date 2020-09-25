@@ -3,6 +3,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <html>
+<button class="button" onclick="copytext()">Copy</button> or download as <a href="noonelist.docx">DOCX</a>, <a href="noonelist.txt">TXT</a>, or <a href="noonelist.rtf">RTF</a>.
+<list>
 NO ONE:<br><br>
 
 LITERALLY NO ONE:<br><br>
@@ -260,6 +262,7 @@ NOT EVEN WHOEVER THEY WORSHIP IN HINDUISM, PROBABLY LIKE A COW OR SOMETHING:<br>
 NOT EVEN JESUS CHRIST:<br><br>
 
 NOT EVEN GOD HIMSELF:
+</list>
 </html>
 <!--Whew, what a ride!-->
 <style>
@@ -280,7 +283,27 @@ html {
     font-size: x-large;
     font-weight: bold;
 }
+.button{
+    border: none;
+    display: inline-block;
+    color: white;
+    background-color: black;
+    text-align: right;
+    text-decoration: none;
+    font-size: medium;
+    font-weight: bold;
+    cursor: pointer;
+}
 </style>
+<script>
+    function copytext() {
+      var copyText = document.getElementById("list");
+      copyText.select();
+      copyText.setSelectionRange(0, 99999)
+      document.execCommand("copy");
+      document.getElementById('success').innerHTML="Copied"
+    }
+</script>
 <!-- Matomo -->
 <script type="text/javascript">
     var _paq = window._paq = window._paq || [];
