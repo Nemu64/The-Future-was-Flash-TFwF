@@ -7,6 +7,10 @@
   src: url(/swf/fonts/verdanab.ttf);
   font-weight: bold;
 }
+@font-face {
+  font-family: Sega;
+  src: url(/swf/fonts/sega.ttf);
+}
 html {
     background-color: black;
     color: white;
