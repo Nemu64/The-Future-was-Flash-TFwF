@@ -23,12 +23,12 @@ object{
 }
 .button{
     border: none;
-    display: inline-block;
     color: white;
     background-color: black;
-    text-align: right;
+    text-align: center;
     text-decoration: none;
     font-size: medium;
     font-weight: bold;
     align-content: left;
+    cursor: pointer;
 }
