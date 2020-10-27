@@ -1,13 +1,11 @@
-<div class="bounce">
 <script>
 var url = window.location.href;
 var string = url.split('.com');
 
 document.write(string[1]);
 </script>
-</div>
 
-
+<div class="bounce">I bounce! (sometimes)</div>
 
 <button class="button" onclick="goBack()"><img src="/swf/images/jump_back.svg"> <sup>Go Back</sup></button>
 <script>
@@ -31,15 +29,15 @@ function goBack() {
     align-content: left;
     font;
 }
-.bounce {
-	animation-delay: 7.7s, 8.8s;
-	animation-duration: 0.5s, 1s;
-	animation-iteration-count: 1, 19;
-	transform: scale(0);
-	transform-origin: center center 0px;
-	animation-name: bounce;
-	animation-timing-function: cubic-bezier(0.5, 0, 0.05, 1), ease-in-out;
-	animation-fill-mode: forwards;
-	animation-direction: normal, normal;
+    .bounce{
+	  animation-delay: 7.7s, 8.8s;
+	  animation-duration: 0.5s, 1s;
+	  animation-iteration-count: 1, 19;
+	  transform: scale(0);
+	  transform-origin: center center 0px;
+	  animation-name: bounce;
+	  animation-timing-function: cubic-bezier(0.5, 0, 0.05, 1), ease-in-out;
+	  animation-fill-mode: forwards;
+	  animation-direction: normal, normal;
 }
 </style>
