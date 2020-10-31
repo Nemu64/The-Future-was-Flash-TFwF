@@ -65,5 +65,8 @@ function datedependent2() {
         if (day==25) {
             div.innerHTML='Happy Birthday Word!';
         }
+        if (day==31) {
+            div.innerHTML='Happy Halloween!';
+        }
     }
 }

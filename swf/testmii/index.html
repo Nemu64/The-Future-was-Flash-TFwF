@@ -41,3 +41,10 @@ function goBack() {
 	  animation-direction: normal, normal;
 }
 </style>
+
+<script>
+var filler = ['Sad isn’t it', 'Say something nice!', 'So qiet you could hear a pin drop'];
+var length = filler.length;
+var rand = Math.round(Math.random()*(length - 1));
+document.getElementsByClassName('text-muted').innerHTML=(filler[rand]);
+</script>
