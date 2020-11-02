@@ -48,3 +48,18 @@ var length = filler.length;
 var rand = Math.round(Math.random()*(length - 1));
 document.getElementsByClassName('text-muted').innerHTML=(filler[rand]);
 </script>
+
+
+<p>Enter a secret code to see something happen.</p>
+
+<input id="codes" type="text" size="50" oninput="myFunction()">
+<button onclick="myFunction()">click</button>
+
+<script>
+function myFunction() {
+  var str = document.getElementsByName("input").value;
+  if str.includes("sega"); {
+    alert ("Sega forever!");
+  }
+}
+</script>
