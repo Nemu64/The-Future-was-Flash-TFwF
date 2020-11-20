@@ -25,6 +25,10 @@ table, th, td {
   border-spacing: 0px;
   width: auto;
 }
+table:hover,th:hover,td:hover {
+  border: 1px solid red;
+  animation: flash 7s infinite;
+}
 footer {
     margin-top: 50px;
     font-size: medium;
@@ -138,4 +142,11 @@ nsfwzoneend{
   100% {
     transform: scale(0.8);
   }
+}
+@keyframes flash {
+  20% {border-color: orange;}
+  40% {border-color: yellow;}
+  60% {border-color: green;}
+  80% {border-color: blue;}
+  90% {border-color: purple;}
 }
