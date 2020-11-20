@@ -80,9 +80,9 @@ function myFunction {
 }
 </script>
 <script>
-  if(FlashEnabled())
-  { document.write('<span style="color:red;">Can\'t detect Flash! It may not be installed, or it may be disabled. Flash is required to use the majority of the site so it recommended that you install it from <a href="https://get.adobe.com/flashplayer/"><span style="color:red;">Adobe</span></a> (recommended) or the open-source alternative <a href="http://lightspark.github.io/"><span style="color:red;">Lightspark</span></a> before continuing.</span>'); }
-  else undefined
+  var div = document.getElementById('FlashDetect');
+  if(FlashEnabled()){undefined}
+  else {div.innerHTML='<span style="color:red;">Can\'t detect Flash! It may not be installed, or it may be disabled. Flash is required to use the majority of the site so it recommended that you install it from <a href="https://get.adobe.com/flashplayer/"><span style="color:red;">Adobe</span></a> (recommended) or the open-source alternative <a href="http://lightspark.github.io/"><span style="color:red;">Lightspark</span></a> before continuing.</span>';}
   function FlashEnabled()
   {
     var flash = navigator.plugins.namedItem('Shockwave Flash');
