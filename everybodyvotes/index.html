@@ -11,3 +11,11 @@
 <h2>Recent Polls</h2>
 <h2>Recent Results</h2>
 <h2>Archived Polls</h2>
+<script>
+function clock() {
+  var d = new Date();
+  var n = d.toLocaleString([], { hour12: true});
+  document.write(n);
+  setInterval(clock, 500)
+}
+</script>
