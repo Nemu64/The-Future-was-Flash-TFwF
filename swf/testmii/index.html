@@ -24,6 +24,7 @@ function goBack() {
 <style>
     html {
       background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+      animation: flash 7s infinite;
     }
     .button{
     border: none;
@@ -47,6 +48,13 @@ function goBack() {
 	  animation-timing-function: cubic-bezier(0.5, 0, 0.05, 1), ease-in-out;
 	  animation-fill-mode: forwards;
 	  animation-direction: normal, normal;
+}
+@keyframes flash {
+  20% {background-image: linear-gradient(to right, orange, yellow, green, blue, indigo, violet, red);}
+  40% {background-image: linear-gradient(to right, yellow, green, blue, indigo, violet, red, orange);}
+  60% {background-image: linear-gradient(to right, green, blue, indigo, violet, red, orange, yellow);}
+  80% {background-image: linear-gradient(to right, blue, indigo, violet, red, orange, yellow, green);}
+  90% {background-image: linear-gradient(to right, indigo, violet, red, orange, yellow, green, blue);}
 }
 </style>
 
