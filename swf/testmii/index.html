@@ -72,14 +72,14 @@ function myFunction {
 }
 </script>
 <script>
-  if(isFlashEnabled())
-  { document.write('Flash is installed (but may need to be enabled)'); }
-  else { document.write('Flash is either not installed or disabled'); }
-  function isFlashEnabled()
+  if(FlashEnabled())
+  { document.write('Can\'t detect Flash! It may not be installed or it may be disabled. Flash is requred to use the majority of the site so it reccommended that you install it from <a href="https://get.adobe.com/flashplayer/">Adobe</a> (reccommended) or the open-source alternative <a href="http://lightspark.github.io/">Lightspark</a> before continuing.'); }
+  else undefined
+  function FlashEnabled()
   {
-      var flash = navigator.plugins.namedItem('Shockwave Flash');
-      if (!flash) { return 0; }
-      else { return 1; }
+    var flash = navigator.plugins.namedItem('Shockwave Flash');
+    if (!flash) {return 0;}
+    else {return 1;}
   }
   </script>
   <embed src="https://www.w3schools.com/tags/helloworld.swf">
