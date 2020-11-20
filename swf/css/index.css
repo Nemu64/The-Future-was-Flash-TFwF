@@ -25,7 +25,7 @@ table, th, td {
   border-spacing: 0px;
   width: auto;
 }
-table, th, td ::hover {
+table,th,td:hover {
   border: 1px solid red;
   animation: flash 7s infinite;
 }
