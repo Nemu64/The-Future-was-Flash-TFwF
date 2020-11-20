@@ -1,0 +1,18 @@
+@font-face {
+font-family: Verdana;
+src: url(/swf/fonts/verdana.ttf);
+}
+@font-face {
+font-family: Verdana;
+src: url(/swf/fonts/verdanab.ttf);
+font-weight: bold;
+}
+html {
+background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);
+text-align: center;
+text-decoration: none;
+font-family: 'Verdana', sans-serif;
+font-size: xx-large;
+font-weight: bold;
+}
