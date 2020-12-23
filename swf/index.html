@@ -13,13 +13,22 @@ Hee hee hee.
 <meta name="Stay the course." content="I will."><meta name="Focus on my voice." content="I will."><meta name="Don't let anyone lead you astray." content="I won’t."><meta name="Have you selected one?" content="I have.">
 <link rel="icon" href="/swf/images/flashwebp.webp">
 <div id='style'><link rel=stylesheet href="/swf/css/index.css"></div>
-<html lang="en-US">
+<html>
     <body onload="clock(), datedependent(), splashes()">
     Welcome to The Future was Flash!
-    </body>
     <br><p class="hvr-pulse-grow" id="splash"></p><noscript><span style="color:red;">Javascript is disabled. That's okay, but some functionally will be limited.</noscript>
-    <br>
-    In case it isn't obvious, you need <a href=https://get.adobe.com/flashplayer/><span style=color:white>Flash Player</span></a> or <a href="http://lightspark.github.io/"><span style=color:white>Lightspark</span></a> to play these.
+    <div id="FlashDetect"></div>
+    <script>
+      var div = document.getElementById('FlashDetect');
+      if(FlashEnabled()){end}
+      else {div.innerHTML='<span style="color:red;">Can\'t detect Flash! It may not be installed, or it may be disabled. Flash is required to use the majority of the site so it recommended that you install it from <a href="https://get.adobe.com/flashplayer/"><span style="color:red;">Adobe</span></a> (recommended) or the open-source alternative <a href="http://lightspark.github.io/"><span style="color:red;">Lightspark</span></a> before continuing.</span>';}
+      function FlashEnabled()
+      {
+      var flash = navigator.plugins.namedItem('Shockwave Flash');
+      if (!flash) {return 0;}
+      else {return 1;}
+      }
+    </script>
     <br><br>
     Countdown to Adobe Flash's EOL:
     <br><div id="countdown"></div><noscript>Unknown. Is Javascript disabled?</noscript>

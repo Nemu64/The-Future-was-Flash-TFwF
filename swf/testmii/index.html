@@ -81,7 +81,7 @@ function myFunction {
 </script>
 <script>
   var div = document.getElementById('FlashDetect');
-  if(FlashEnabled()){undefined}
+  if(FlashEnabled()){end}
   else {div.innerHTML='<span style="color:red;">Can\'t detect Flash! It may not be installed, or it may be disabled. Flash is required to use the majority of the site so it recommended that you install it from <a href="https://get.adobe.com/flashplayer/"><span style="color:red;">Adobe</span></a> (recommended) or the open-source alternative <a href="http://lightspark.github.io/"><span style="color:red;">Lightspark</span></a> before continuing.</span>';}
   function FlashEnabled()
   {
@@ -91,3 +91,5 @@ function myFunction {
   }
   </script>
   <embed src="https://www.w3schools.com/tags/helloworld.swf">
+
+    /*In case it isn't obvious, you need <a href=https://get.adobe.com/flashplayer/><span style=color:white>Flash Player</span></a> or <a href="http://lightspark.github.io/"><span style=color:white>Lightspark</span></a> to play these.*/
