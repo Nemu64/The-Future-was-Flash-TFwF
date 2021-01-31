@@ -18,9 +18,6 @@ Hee hee hee.
     Welcome to The Future was Flash!
     <br><p class="hvr-pulse-grow" id="splash"></p><noscript><span style="color:red;">Javascript is disabled. That's okay, but some functionally will be limited.</noscript>
     <br><br>
-    Countdown to Adobe Flash's EOL:
-    <br><div id="countdown"></div><noscript>Unknown. Is Javascript disabled?</noscript>
-    <br>
     Lengend:
     <br><span style="color:lime">Green</span> = works perfectly
     <br><span style="color:yellow">Yellow</span> = works with errors
@@ -133,23 +130,4 @@ Hee hee hee.
     console.log('What are you doing? Looking for secrets? Don’t stick your nose where it doesn’t belong. Or you might find something you DON’T like... Hee hee hee.');
 </script>
 <!--Hello reddit, it's a me, u/TheEndlessSea! (or u/Nemu64 if you'd prefer, though that account is long gone). So how's your day going? Since you're here, maybe try Ruqqus? (https://www.ruqqus.com)-->
-
-<!--This is the countdown code :)-->
-<script>
-var countDownDate = new Date("Jan 1, 2021 0:0:0").getTime();
-var x = setInterval(function() {
-  var now = new Date().getTime();
-  var distance = countDownDate - now;
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  document.getElementById("countdown").innerHTML = days + "day(s) " + hours + "hour(s) "
-  + minutes + "min(s)";
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("countdown").innerHTML = "Adobe Flash has reached EOL :(";
-  }
-}, 1000);
-</script>
-<!--End countdown code :(-->
 <!--Gotta update those cookies-->
