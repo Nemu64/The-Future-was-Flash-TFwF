@@ -17,18 +17,6 @@ Hee hee hee.
     <body onload="clock(), datedependent(), splashes()">
     Welcome to The Future was Flash!
     <br><p class="hvr-pulse-grow" id="splash"></p><noscript><span style="color:red;">Javascript is disabled. That's okay, but some functionally will be limited.</noscript>
-    <div id="FlashDetect"></div>
-    <script>
-      var div = document.getElementById('FlashDetect');
-      if(FlashEnabled()){end}
-      else {div.innerHTML='<span style="color:red;">Can\'t detect Flash! It may not be installed, or it may be disabled. Flash is required to use the majority of the site so it recommended that you install it from <a href="https://get.adobe.com/flashplayer/"><span style="color:red;">Adobe</span></a> (recommended) or the open-source alternative <a href="http://lightspark.github.io/"><span style="color:red;">Lightspark</span></a> before continuing.</span>';}
-      function FlashEnabled()
-      {
-      var flash = navigator.plugins.namedItem('Shockwave Flash');
-      if (!flash) {return 0;}
-      else {return 1;}
-      }
-    </script>
     <br><br>
     Countdown to Adobe Flash's EOL:
     <br><div id="countdown"></div><noscript>Unknown. Is Javascript disabled?</noscript>
