@@ -59,6 +59,7 @@ sngerr {
     text-decoration: none;
     font-weight: bold;
     font-size: medium;
+    text-align: center;
 }
 .hvr-pulse-grow {
     display: inline-block;
