@@ -52,7 +52,12 @@ sngerr {
     }
 }
 .themedlink {
+    border: none;
+    display: inline-block;
     color: white;
+    background-color: #181a1b;
+    text-decoration: none;
+    font-weight: bold;
 }
 .hvr-pulse-grow {
     display: inline-block;
@@ -82,15 +87,15 @@ nsfwzoneend{
     color: red;
 }
 .button{
-    border: none;
-    display: inline-block;
-    color: white;
-    background-color: #181a1b;
-    text-align: right;
-    text-decoration: none;
-    font-size: medium;
-    font-weight: bold;
-    align-content: right;
+  border: none;
+  display: inline-block;
+  color: white;
+  background-color: #181a1b;
+  text-align: right;
+  text-decoration: none;
+  font-size: medium;
+  font-weight: bold;
+  align-content: right;
 }
 .button2{
   border: none;
