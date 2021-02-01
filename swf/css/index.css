@@ -63,7 +63,7 @@ table, th, td {
   border-spacing: 0px;
   width: auto;
 }
-table:hover,th:hover,td:hover {
+th:hover,td:hover {
   border: 1px solid red;
   animation: flash 7s infinite;
 }
