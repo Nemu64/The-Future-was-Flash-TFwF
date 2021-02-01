@@ -64,7 +64,7 @@ table, th, td {
   width: auto;
 }
 th:hover,td:hover {
-  border: 1px solid red;
+  border: 2px solid red;
   animation: flash 7s infinite;
 }
 footer {
