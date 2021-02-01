@@ -9,7 +9,7 @@
 }
 html{
 
-        background-color: black;
+        background-color: #181a1b;
         color: white;
         text-align: center;
         font-family: 'Verdana', sans-serif;
@@ -24,7 +24,7 @@ html{
      line-height: 50px;
      text-align: center;
      -moz-transform:translateY(100%);
-     -webkit-transform:translateY(100%);	
+     -webkit-transform:translateY(100%);
      transform:translateY(100%);
      -moz-animation: scroll-up 60s linear infinite;
      -webkit-animation: scroll-up 60s linear infinite;
@@ -39,14 +39,14 @@ html{
      100% { -webkit-transform: translateY(-100%); }
     }
     @keyframes scroll-up {
-     0%   { 
+     0%   {
      -moz-transform: translateY(100%);
      -webkit-transform: translateY(100%);
-     transform: translateY(100%); 		
+     transform: translateY(100%);
      }
-     100% { 
+     100% {
      -moz-transform: translateY(-100%);
      -webkit-transform: translateY(-100%);
-     transform: translateY(-100%); 
+     transform: translateY(-100%);
      }
 }

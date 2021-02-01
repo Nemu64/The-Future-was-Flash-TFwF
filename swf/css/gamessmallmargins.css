@@ -8,7 +8,7 @@
     font-weight: bold;
 }
 html{
-    background-color: black;
+    background-color: #181a1b;
     color: white;
     margin-top: 50px;
 }
@@ -24,7 +24,7 @@ object{
 .button{
     border: none;
     color: white;
-    background-color: black;
+    background-color: #181a1b;
     text-align: center;
     text-decoration: none;
     font-size: medium;
