@@ -22,7 +22,7 @@
     font-weight: bold;
     }
     table, th, td {
-      border: 1px solid black !important;
+      border: 1px solid black;
       border-spacing: 0px;
       width: auto;
     }
@@ -59,7 +59,7 @@ html {
     font-weight: bold;
 }
 table, th, td {
-  border: 1px solid white !important;
+  border: 1px solid white;
   border-spacing: 0px;
   width: auto;
 }
