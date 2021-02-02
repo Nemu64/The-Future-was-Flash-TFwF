@@ -54,14 +54,17 @@ sngerr {
 a:link {
   color: white;
   background-color: transparent;
+  text-decoration: none;
 }
 a:visited {
   color: white;
   background-color: transparent;
+  text-decoration: none;
 }
 a:hover {
   animation: linkflash 7s infinite;
   background-color: transparent;
+  text-decoration: none;
 }
 
 .themedlink {
