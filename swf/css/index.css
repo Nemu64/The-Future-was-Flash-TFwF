@@ -54,17 +54,14 @@ sngerr {
 a:link {
   color: white;
   background-color: transparent;
-  text-decoration: underline;
 }
 a:visited {
   color: white;
   background-color: transparent;
-  text-decoration: underline;
 }
 a:hover {
-  animation: flash 7s infinite;
+  animation: linkflash 7s infinite;
   background-color: transparent;
-  text-decoration: underline;
 }
 
 .themedlink {
@@ -185,4 +182,12 @@ nsfwzoneend{
   60% {border-color: green;}
   80% {border-color: blue;}
   90% {border-color: purple;}
+}
+@keyframes linkflash {
+  16% {color: red}
+  32% {color: orange;}
+  48% {color: yellow;}
+  64% {color: green;}
+  80% {color: blue;}
+  100% {color: purple;}
 }
