@@ -51,6 +51,22 @@ sngerr {
       transform: scale(1.1);
     }
 }
+a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:hover {
+  animation: flash 7s infinite;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
 .themedlink {
     border: none;
     display: inline-block;
