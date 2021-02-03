@@ -14,8 +14,8 @@ Hee hee hee.
 <link rel="icon" href="/swf/images/flashwebp.webp">
 <div id='style'><link rel=stylesheet href="/swf/css/dark.css"></div>
 <html>
-    <body onload="clock(), datedependent(), splashes()">
-    <img style="float: right;cursor: pointer;" src="/swf/images/darkbulb.svg" width="20px" height="20px" draggable="false" onclick="changethemetolight()" id="bulblight">
+    <body onload="clock(),datedependent(),splashes()">
+    <img style="float: right;cursor: pointer;" src="/swf/images/darkbulb.svg" width="20px" height="20px" draggable="false" onclick="changethemetolight(),clicksound()" id="bulblight">
     Welcome to The Future was Flash!
     <br><p class="hvr-pulse-grow" id="splash"></p><noscript><span style="color:red;">Javascript is disabled. That's okay, but some functionally will be limited.</noscript>
     <br>
@@ -107,6 +107,14 @@ Hee hee hee.
 </footer>
 </body>
 </html>
+<audio id="click">
+  <source src="/swf/audio/click.mp3" type="audio/mpeg">
+</audio>
+<script>
+function clicksound() {
+  document.getElementById("click").play();
+}
+</script>
 <!-- Matomo -->
 <script type="text/javascript">
   var _paq = window._paq = window._paq || [];
