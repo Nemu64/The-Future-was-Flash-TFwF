@@ -12,8 +12,8 @@
   src: url(/swf/fonts/sega.ttf);
 }
 html {
-    background-color: #181a1b;
-    color: white;
+    background-color: rgb(249,249,250);
+    color: black;
     text-align: center;
     text-decoration: none;
     font-family: 'Verdana', sans-serif;
@@ -51,14 +51,40 @@ sngerr {
       transform: scale(1.1);
     }
 }
-a:link {
-  color: white;
-  background-color: transparent;
+.greenlink {
+  color: forestgreen;
   text-decoration: none;
 }
-a:visited {
-  color: white;
-  background-color: transparent;
+.smallgreenlink {
+  color: forestgreen;
+  font-size: medium;
+  text-decoration: none;
+}
+.yellowlink {
+  color: gold;
+  text-decoration: none;
+}
+.smallyellowlink {
+  color: gold;
+  font-size: medium;
+  text-decoration: none;
+}
+.redlink {
+  color: red;
+  text-decoration: none;
+}
+.smallredlink {
+  color: red;
+  font-size: medium;
+  text-decoration: none;
+}
+.whitelink {
+  color: black;
+  text-decoration: none;
+}
+.smallwhitelink {
+  color: black;
+  font-size: medium;
   text-decoration: none;
 }
 a:hover {
@@ -66,22 +92,11 @@ a:hover {
   background-color: transparent;
   text-decoration: none;
 }
-
-.themedlink {
-    border: none;
-    display: inline-block;
-    color: white;
-    background-color: #181a1b;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: medium;
-    text-align: center;
-}
 .splashbutton {
     border: none;
     display: inline-block;
-    color: white;
-    background-color: #181a1b;
+    color: black;
+    background-color: transparent;
     text-decoration: none;
     font-weight: bold;
     font-size: xx-large;
@@ -117,8 +132,8 @@ nsfwzoneend{
 .button{
   border: none;
   display: inline-block;
-  color: white;
-  background-color: #181a1b;
+  color: black;
+  background-color: transparent;
   text-align: right;
   text-decoration: none;
   font-size: medium;
@@ -128,8 +143,8 @@ nsfwzoneend{
 .button2{
   border: none;
   display: inline-block;
-  color: white;
-  background-color: #181a1b;
+  color: black;
+  background-color: transparent;
   text-align: center;
   text-decoration: none;
   font-size: inherit;
@@ -193,4 +208,29 @@ nsfwzoneend{
   64% {color: green;}
   80% {color: blue;}
   100% {color: purple;}
+}
+.roll {
+  @-webkit-keyframes roll {
+    from { -webkit-transform: rotate(0deg) }
+    to   { -webkit-transform: rotate(360deg) }
+    }
+    @-moz-keyframes roll {
+    from { -moz-transform: rotate(0deg) }
+    to   { -moz-transform: rotate(360deg) }
+    }
+    @keyframes roll {
+    from { transform: rotate(0deg) }
+    to   { transform: rotate(360deg) }
+    }
+    body {
+    -moz-animation-name: roll;
+    -moz-animation-duration: 4s;
+    -moz-animation-iteration-count: 1;
+    -webkit-animation-name: roll;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-iteration-count: 1;
+    animation-name: roll;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    }
 }
