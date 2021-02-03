@@ -5,17 +5,8 @@
 <meta name="keywords" content="ray,ray series,phil collins,flash games,online games">
 <meta name="description" content="Ray at IPX Forever!">
 <link rel="stylesheet" href="/swf/css/games.css">
-<script>
-  window.RufflePlayer = window.RufflePlayer || {};
-  window.addEventListener("load", (event) => {
-      const ruffle = window.RufflePlayer.newest();
-      const player = ruffle.createPlayer();
-      const container = document.getElementById("container");
-      container.appendChild(player);
-      player.load("ray.swf");
-  });
-</script>
-<script src="/swf/ruffle/ruffle.js"></script>
+<script src="/ruffle/ruffle.js"></script>
+<object type="application/x-shockwave-flash" height="768" width="1024" name="game" data="/swf-files/ray.swf"></object>
 <br><button class="backbutton" onclick="goBack()"><img src="/swf/images/jump_back.svg"> <sup>Go Back</sup></button>
 <script>
 function goBack() {
