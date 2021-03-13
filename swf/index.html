@@ -11,7 +11,7 @@
     <img style="float: right;cursor: pointer;" src="/swf/images/darkbulb.svg" width="20px" height="20px" draggable="false" onclick="changethemetolight(),clicksound()" id="bulblight">
     Welcome to The Future was Flash!
     <br><p class="hvr-pulse-grow" id="splash">Waiting for JS to become ready...</p><br>
-	<noscript><span style="color:red;">Javascript is disabled. That's okay, but some functionally will be limited.</span><br><br></noscript>
+	<noscript><span style="color:red;">Javascript is disabled. That's okay, but some functionally will be limited.</span><br><br></noscript><div id="FlashDetect"></div>
     Lengend:
     <br><span class="greenlink">Green</span> = works perfectly
     <br><span class="yellowlink">Yellow</span> = works with errors
@@ -97,7 +97,8 @@
 <footer>
     The Future was Flash - An IPXF Project - Site, Copyright © 2021 Perfect Technologies LLC
     <br>Flash - <div class="heart">❤️</div> - The heartbeat of IPXF
-    <br><a href="/swf/about.html" class="smallwhitelink">About</a> | <a href="/swf/credits.html" class="smallwhitelink">Credits</a> | <a href="mailto:nemu@ipxforever.com" class="smallwhitelink">Contact</a><br><span style="text-align: right;"><div id="ver"><button class="button" onclick="oneclick()">ver. 7.4.4</button></div></span>
+    <br><a href="/swf/about.html" class="smallwhitelink">About</a> | <a href="/swf/credits.html" class="smallwhitelink">Credits</a> | <a href="mailto:nemu@ipxforever.com" class="smallwhitelink">Contact</a><br><div id="clock"></div>
+    <span style="text-align: right;"><div id="ver"><button class="button" onclick="oneclick()">ver. 7.4.4</button></div></span>
 </footer>
 </body>
 </html>
@@ -125,6 +126,17 @@ function clicksound() {
 </script>
 <noscript><p><img src="//ipxforever.com/developer/analytics/matomo.php?idsite=1&amp;rec=1" style="border:0;" alt="" /></p></noscript>
 <!-- End Matomo Code -->
+<script>
+  var div = document.getElementById('FlashDetect');
+  if(FlashEnabled()){}
+  else {div.innerHTML='<span style="color:red;">Can\'t detect Flash! Consider installing <a href="https://ruffle.rs/" class="redlink">Ruffle</a> before continuing.<br><br></span>';}
+  function FlashEnabled()
+  {
+    var flash = navigator.plugins.namedItem('Shockwave Flash');
+    if (!flash) {return 0;}
+    else {return 1;}
+  }
+</script>
 <script src="/swf/js/splash.js" type="text/javascript" charset="UTF-8"></script>
 <script src="/swf/js/clock.js" type="text/javascript" charset="UTF-8"></script>
 <script src="/swf/js/clockmessage.js" type="text/javascript" charset="UTF-8"></script>

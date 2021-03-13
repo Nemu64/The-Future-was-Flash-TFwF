@@ -49,7 +49,7 @@ function goBack() {
 	  animation-fill-mode: forwards;
 	  animation-direction: normal, normal;
 }
-@keyframes flash {
+@keyframes flash2 {
   20% {background-image: linear-gradient(to right, orange, yellow, green, blue, indigo, violet, red);}
   40% {background-image: linear-gradient(to right, yellow, green, blue, indigo, violet, red, orange);}
   60% {background-image: linear-gradient(to right, green, blue, indigo, violet, red, orange, yellow);}
@@ -79,17 +79,18 @@ function myFunction {
   }
 }
 </script>
+<div id="FlashDetect"></div>
 <script>
   var div = document.getElementById('FlashDetect');
-  if(FlashEnabled()){end}
-  else {div.innerHTML='<span style="color:red;">Can\'t detect Flash! It may not be installed, or it may be disabled. Flash is required to use the majority of the site so it recommended that you install it from <a href="https://get.adobe.com/flashplayer/"><span style="color:red;">Adobe</span></a> (recommended) or the open-source alternative <a href="http://lightspark.github.io/"><span style="color:red;">Lightspark</span></a> before continuing.</span>';}
+  if(FlashEnabled()){return}
+  else {div.innerHTML='<span style="color:red;">Can\'t detect Flash! Consider installing <a href="https://ruffle.rs/" class="redlink">Ruffle</a> before continuing.<br><br></span>';}
   function FlashEnabled()
   {
     var flash = navigator.plugins.namedItem('Shockwave Flash');
     if (!flash) {return 0;}
     else {return 1;}
   }
-  </script>
+</script>
   <embed src="https://www.w3schools.com/tags/helloworld.swf">
 
     /*In case it isn't obvious, you need <a href=https://get.adobe.com/flashplayer/><span style=color:white>Flash Player</span></a> or <a href="http://lightspark.github.io/"><span style=color:white>Lightspark</span></a> to play these.*/
