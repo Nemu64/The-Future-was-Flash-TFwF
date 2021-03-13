@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<input type="number" id="guess" oninput="check()">
+<div id="stat"></div>
+<script>
+var rndno = Math.floor((Math.random() * 10) + 1);
+console.log(rndno);
+function check() {
+let guess = document.forms["guess"].value
+if (guess = rndno) {
+document.getElementById('stat').innerHTML="You got it!";
+}
+else if (guess > rndno) {
+document.getElementById('stat').innerHTML="Nope. Too high!";
+}
+else if (guess < rndno) {
+document.getElementById('stat').innerHTML="Nope. Too low!";
+}
+else {
+document.getElementById('stat').innerHTML="Something went wrong!";
+}
+}
+</script>

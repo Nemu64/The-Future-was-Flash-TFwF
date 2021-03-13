@@ -21,6 +21,6 @@ function oneclick5() {
     button.innerHTML='<button class="button" onclick="oneclick6()">ver. 7.4.4</button>';
 }
 function oneclick6() {
-    dev.innerHTML='No need, you’re already a developer! <a href="https://github.com/Nemu64/The-Future-was-Flash-TFwF" class="smallwhitelink">Developer mode</a>.';
+    dev.innerHTML='No need, you\'re already a developer! <a href="https://github.com/Nemu64/The-Future-was-Flash-TFwF" class="smallwhitelink">Developer mode</a>.';
     button.innerHTML='<button class="button" disabled=true onclick="oneclick6()">ver. 7.4.4</button>';
 }

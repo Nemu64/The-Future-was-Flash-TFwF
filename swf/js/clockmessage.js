@@ -14,7 +14,7 @@ function datedependent2() {
             div.innerHTML='Merry Christmas!';
         }
         else if (day==31) {
-            div.innerHTML='Happy New Year’s Eve!';
+            div.innerHTML='Happy New Year\'s Eve!';
         }
     }
     else if (month==06) { /*July*/
