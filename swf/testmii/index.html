@@ -4,6 +4,9 @@ var string = url.split('.com');
 
 document.write(string[1]);
 </script>
+<link href="/swf/css/auto.css" rel="stylesheet" type="text/css">
+
+
 
 <div class="bounce">I bounce! (sometimes)</div>
 
@@ -23,8 +26,7 @@ function goBack() {
 <div class="clear"></div>
 <style>
     html {
-      background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
-      animation: flash 1s infinite;
+      background: white;
     }
     .button{
     border: none;
@@ -48,13 +50,6 @@ function goBack() {
 	  animation-timing-function: cubic-bezier(0.5, 0, 0.05, 1), ease-in-out;
 	  animation-fill-mode: forwards;
 	  animation-direction: normal, normal;
-}
-@keyframes flash2 {
-  20% {background-image: linear-gradient(to right, orange, yellow, green, blue, indigo, violet, red);}
-  40% {background-image: linear-gradient(to right, yellow, green, blue, indigo, violet, red, orange);}
-  60% {background-image: linear-gradient(to right, green, blue, indigo, violet, red, orange, yellow);}
-  80% {background-image: linear-gradient(to right, blue, indigo, violet, red, orange, yellow, green);}
-  90% {background-image: linear-gradient(to right, indigo, violet, red, orange, yellow, green, blue);}
 }
 </style>
 
