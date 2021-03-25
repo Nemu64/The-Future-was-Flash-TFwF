@@ -5,7 +5,7 @@ var rand = Math.round(Math.random()*(length - 1));
 document.getElementById('splash').innerHTML=(quotes[rand]);
 }
 function spin() {
-    document.classList.toggle("roll");
+    document.getElementById("html").classList.add("roll");
     setTimeout("document.body.classList.toggle('roll');", 4000);
 }
 function changethemetolight() {
