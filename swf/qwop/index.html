@@ -2,17 +2,31 @@
 <title>QWOP at IPX Forever!</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel=stylesheet href="/swf/css/games.css">
-<center><object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" width="1024" height="768" id="qwop" align="middle">
-    <param name="allowScriptAccess" value="sameDomain" />
-    <param name="movie" value="qwop" /><param name="quality" value="high" /><embed src="/swf-files/qwop.swf" quality="high" width="1024" height="768" name="qwop" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" /></object>
-<script type="text/javascript" src="https://foddy.net/scripts/swfobject.js"></script>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-160620472-5"></script>
+<meta name="keywords" content="qwop,flash games,online games">
+<meta name="description" content="QWOP at IPX Forever!">
+<link rel="stylesheet" href="/swf/css/games.css">
+<script src="/swf/ruffle/ruffle.js"></script>
+<script>window.RufflePlayer = window.RufflePlayer || {};window.RufflePlayer.config = {"polyfills": true,"autoplay": "on","unmuteOverlay": "hidden",}</script>
+<object type="application/x-shockwave-flash" height="768" width="1024" name="game" data="https://swf.ipxforever.com/qwop.swf"></object>
+<br><button class="backbutton" onclick="goBack()"><img src="/swf/images/jump_back.svg"> <sup>Go Back</sup></button>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-160620472-5');
+function goBack() {
+  window.history.back();
+}
 </script>
+<!-- Matomo -->
+<script type="text/javascript">
+  var _paq = window._paq = window._paq || [];
+  _paq.push(["setCookieDomain", "*.ipxforever.com"]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//ipxforever.com/developer/analytics/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//ipxforever.com/developer/analytics/matomo.php?idsite=1&amp;rec=1" style="border:0;" alt="" /></p></noscript>
+<!-- End Matomo Code -->
