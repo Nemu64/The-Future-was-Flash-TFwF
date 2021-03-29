@@ -1,5 +1,4 @@
-function init() {
-	var h1 = document.getElementById('js'), delay = 250;
+var h1 = document.getElementById('js'), delay = 250;
 	var h2 = document.getElementById('buttons');
 	setTimeout(function() {
 								h1.innerHTML = "D";
