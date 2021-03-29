@@ -1,4 +1,5 @@
-var h1 = document.getElementById('js'), delay = 250;
+function init() {
+	var h1 = document.getElementById('js'), delay = 250;
 	var h2 = document.getElementById('buttons');
 	setTimeout(function() {
 								h1.innerHTML = "D";
@@ -52,7 +53,12 @@ var h1 = document.getElementById('js'), delay = 250;
 													}, delay);
 												}, delay);
 											}, delay);
-										}
+										}, delay);
+									}, delay);
+								}, delay);
+							}, delay);
+						}, delay);
+					}
 function cont() {
 	var h1 = document.getElementById('js'), delay = 250;
 	var h2 = document.getElementById('buttons');
