@@ -2,53 +2,41 @@ function init() {
 	var h1 = document.getElementById('js'), delay = 250;
 	var h2 = document.getElementById('buttons');
 	setTimeout(function() {
-		h1.innerHTML = "R";
-		setTimeout(function() {
-			h1.innerHTML = "Re";
-			setTimeout(function() {
-				h1.innerHTML = "Rea";
-				setTimeout(function() {
-					h1.innerHTML = "Real";
-					setTimeout(function() {
-						h1.innerHTML = "Reall";
-						setTimeout(function() {
-							h1.innerHTML = "Really";
-							setTimeout(function() {
-								h1.innerHTML = "Really d";
+								h1.innerHTML = "D";
 								setTimeout(function() {
-									h1.innerHTML = "Really de";
+									h1.innerHTML = "De";
 									setTimeout(function() {
-										h1.innerHTML = "Really del";
+										h1.innerHTML = "Del";
 										setTimeout(function() {
-											h1.innerHTML = "Really dele";
+											h1.innerHTML = "Dele";
 											setTimeout(function() {
-												h1.innerHTML = "Really delet";
+												h1.innerHTML = "Delet";
 												setTimeout(function() {
-													h1.innerHTML = "Really delete";
+													h1.innerHTML = "Delete";
 													setTimeout(function() {
-														h1.innerHTML = "Really delete y";
+														h1.innerHTML = "Delete y";
 														setTimeout(function() {
-															h1.innerHTML = "Really delete yo";
+															h1.innerHTML = "Delete yo";
 															setTimeout(function() {
-																h1.innerHTML = "Really delete you";
+																h1.innerHTML = "Delete you";
 																setTimeout(function() {
-																	h1.innerHTML = "Really delete your";
+																	h1.innerHTML = "Delete your";
 																	setTimeout(function() {
-																		h1.innerHTML = "Really delete your a";
+																		h1.innerHTML = "Delete your a";
 																		setTimeout(function() {
-																			h1.innerHTML = "Really delete your ac";
+																			h1.innerHTML = "Delete your ac";
 																			setTimeout(function() {
-																				h1.innerHTML = "Really delete your acc";
+																				h1.innerHTML = "Delete your acc";
 																				setTimeout(function() {
-																					h1.innerHTML = "Really delete your acco";
+																					h1.innerHTML = "Delete your acco";
 																					setTimeout(function() {
-																						h1.innerHTML = "Really delete your accou";
+																						h1.innerHTML = "Delete your accou";
 																						setTimeout(function() {
-																							h1.innerHTML = "Really delete your accoun";
+																							h1.innerHTML = "Delete your accoun";
 																							setTimeout(function() {
-																								h1.innerHTML = "Really delete your account";
+																								h1.innerHTML = "Delete your account";
 																								setTimeout(function() {
-																									h1.innerHTML = "Really delete your account?";
+																									h1.innerHTML = "Delete your account?";
 																									setTimeout(function() {
 																								h2.innerHTML = "<button type='button' onclick='cont()'>Yes</button><button type='button' onclick='cancel()'>No</button>";
 																								}, delay);
@@ -57,7 +45,7 @@ function init() {
 																					}, delay);
 																				}, delay);
 																			}, delay);
-																		}, delay);															
+																		}, delay);
 																	}, delay);
 																}, delay);
 															}, delay);
@@ -65,18 +53,7 @@ function init() {
 													}, delay);
 												}, delay);
 											}, delay);
-										}, delay);
-									}, delay);
-								}, delay);
-							}, delay);
-						}, delay);
-					}, delay);
-				}, delay);
-			}, delay);
-		}, delay);
-	}, delay);
-}, delay);
-}
+										}
 function cont() {
 	var h1 = document.getElementById('js'), delay = 250;
 	var h2 = document.getElementById('buttons');
@@ -191,14 +168,14 @@ function cont() {
 																																																					setTimeout(function() {
 																																																						h1.innerHTML = "Once your account has been deleted, there is no way to recover it.";
 																																																						cont2();
-																																																						
+
 																								}, delay);
 																							}, delay);
 																						}, delay);
 																					}, delay);
 																				}, delay);
 																			}, delay);
-																		}, delay);															
+																		}, delay);
 																	}, delay);
 																}, delay);
 															}, delay);
@@ -306,7 +283,7 @@ var h3 = document.getElementById('cont2'), delay = 250;
 																					}, delay);
 																				}, delay);
 																			}, delay);
-																		}, delay);															
+																		}, delay);
 																	}, delay);
 																}, delay);
 															}, delay);
