@@ -1,0 +1,3 @@
+AddEncoding br .wasm
+AddEncoding gzip .wasm
+AddType application/wasm .wasm
