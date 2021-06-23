@@ -224,5 +224,6 @@ body {
   animation-name: roll;
   animation-duration: 4s;
   animation-iteration-count: 1;
+  animation-play-state: running;
   }
 }
