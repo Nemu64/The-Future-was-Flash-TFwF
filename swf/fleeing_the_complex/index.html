@@ -5,8 +5,6 @@
 <meta name="keywords" content="Fleeing the Complex,henry stickmin,puffballsunited,henry stickmin series,flash games,online games">
 <meta name="description" content="Fleeing the Complex at IPX Forever!">
 <link rel="stylesheet" href="/swf/css/games.css">
-<script src="/swf/ruffle/ruffle.js"></script>
-<script>window.RufflePlayer = window.RufflePlayer || {};window.RufflePlayer.config = {"polyfills": true,"autoplay": "on","unmuteOverlay": "hidden",}</script>
 <object type="application/x-shockwave-flash" height="768" width="1366" name="game" data="https://swf.ipxforever.com/fleeing-the-complex.swf"></object>
 <br>If you like the Henry Stickmin series, consider supporting the developer (PuffballsUnited) by purchasing the final Henry Stickmin game, Completing the Mission on <a href="https://store.steampowered.com/app/1089980/The_Henry_Stickmin_Collection/">Steam</a>.
 <br><button class="backbutton" onclick="goBack()"><img src="/swf/images/jump_back.svg"> <sup>Go Back</sup></button>
@@ -14,4 +12,11 @@
 function goBack() {
   window.history.back();
 }
+</script>
+<script id="ruffle"></script>
+<script id="rufflesetup"></script>
+<script>
+  const useflashplayer = new URLSearchParams(window.location.search);
+  var forceflash = useflashplayer.get("forceflash");
+  if (forceflash == "true" || forceflash == "1"){}else{document.getElementById("ruffle").setAttribute("src", "/swf/ruffle/ruffle.js"); window.RufflePlayer = window.RufflePlayer || {};window.RufflePlayer.config = {"polyfills": true,"autoplay": "on","unmuteOverlay": "hidden",}}
 </script>

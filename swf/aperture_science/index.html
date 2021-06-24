@@ -5,12 +5,17 @@
 <meta name="keywords" content="Aperture Science,portal series,valve,flash games,online games">
 <meta name="description" content="Aperture Science at IPX Forever!">
 <link rel="stylesheet" href="/swf/css/games.css">
-<script src="/swf/ruffle/ruffle.js"></script>
-<script>window.RufflePlayer = window.RufflePlayer || {};window.RufflePlayer.config = {"polyfills": true,"autoplay": "on","unmuteOverlay": "hidden",}</script>
 <object type="application/x-shockwave-flash" height="768" width="1024" name="game" data="https://swf.ipxforever.com/aperturescience.swf"></object>
 <br><button class="backbutton" onclick="goBack()"><img src="/swf/images/jump_back.svg"> <sup>Go Back</sup></button>
 <script>
 function goBack() {
   window.history.back();
 }
+</script>
+<script id="ruffle"></script>
+<script id="rufflesetup"></script>
+<script>
+  const useflashplayer = new URLSearchParams(window.location.search);
+  var forceflash = useflashplayer.get("forceflash");
+  if (forceflash == "true" || forceflash == "1"){}else{document.getElementById("ruffle").setAttribute("src", "/swf/ruffle/ruffle.js"); window.RufflePlayer = window.RufflePlayer || {};window.RufflePlayer.config = {"polyfills": true,"autoplay": "on","unmuteOverlay": "hidden",}}
 </script>
