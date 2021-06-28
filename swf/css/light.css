@@ -209,12 +209,11 @@ nsfwzoneend{
   80% {color: blue;}
   100% {color: purple;}
 }
-.roll {
 @keyframes roll {
-  from { transform: rotate(0deg) }
-  to   { transform: rotate(360deg) }
+  from{transform: rotate(0deg)}
+  to{transform: rotate(360deg)}
 }
-body {
+.roll {
   -moz-animation-name: roll;
   -moz-animation-duration: 4s;
   -moz-animation-iteration-count: 1;
@@ -224,6 +223,4 @@ body {
   animation-name: roll;
   animation-duration: 4s;
   animation-iteration-count: 1;
-  animation-play-state: running;
-  }
 }
