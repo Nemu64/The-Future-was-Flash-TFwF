@@ -107,13 +107,6 @@ function changethemetodark() {
     lighticon.setAttribute("src","/swf/images/darkbulb.svg")
     lighticon.setAttribute("onclick","changethemetolight(),clicksound()")
 }
-/*Clock for homepage*/
-function clock() {
-    var d = new Date();
-    var n = d.toLocaleString([], { hour12: true});
-    document.getElementById("clock").innerHTML = n;
-    setInterval(clock, 500)
-}
 /*"Developer" mode*/
 var dev = document.getElementById('dev');
 var button = document.getElementById('ver');
@@ -140,4 +133,11 @@ function oneclick5() {
 function oneclick6() {
     dev.innerHTML='No need, you\'re already a developer! <a href="https://github.com/Nemu64/The-Future-was-Flash-TFwF" class="smallwhitelink">Developer mode</a>.';
     button.innerHTML='<button class="button" disabled=true onclick="oneclick6()">ver. 8.1.4</button>';
+}
+/*Clock for homepage*/
+function clock() {
+    var d = new Date();
+    var n = d.toLocaleString([], { hour12: true});
+    document.getElementById("clock").innerHTML = n;
+    setInterval(clock, 500)
 }
