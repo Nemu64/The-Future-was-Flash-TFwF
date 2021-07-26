@@ -106,25 +106,4 @@
 <audio id="click">
   <source src="/swf/audio/click.mp3" type="audio/mpeg">
 </audio>
-<script>
-function clicksound() {
-  document.getElementById("click").play();
-}
-</script>
-<script>
-  var div = document.getElementById('FlashDetect');
-  if(FlashEnabled()){}
-  else {div.innerHTML='<span style="color:red;">Can\'t detect Flash! Consider installing <a href="https://ruffle.rs/" class="redlink">Ruffle</a> before continuing.<br><br></span>';}
-  function FlashEnabled()
-  {
-    var flash = navigator.plugins.namedItem('Shockwave Flash');
-    if (!flash) {return 0;}
-    else {return 1;}
-  }
-</script>
 <script src="/swf/js/splash.js" type="text/javascript" charset="UTF-8"></script>
-<script src="/swf/js/clock.js" type="text/javascript" charset="UTF-8"></script>
-<script src="/swf/js/developer.js" type="text/javascript" charset="UTF-8"></script>
-<script>
-    console.log('What are you doing? Looking for secrets? Don’t stick your nose where it doesn’t belong. Or you might find something you DON’T like... Hee hee hee.');
-</script>

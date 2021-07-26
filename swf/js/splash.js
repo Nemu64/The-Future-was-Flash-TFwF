@@ -1,7 +1,22 @@
+console.log('What are you doing? Looking for secrets? Don’t stick your nose where it doesn’t belong. Or you might find something you DON’T like... Hee hee hee.');
 var date=new Date();
 var month=date.getMonth();
 var day=date.getDate();
-
+/*Play sound when changing themes*/
+function clicksound() {
+    document.getElementById("click").play();
+}
+/*Detect if Flash is installed and displat a warning if it's not*/
+var div = document.getElementById('FlashDetect');
+if(FlashEnabled()){}
+else {div.innerHTML='<span style="color:red;">Can\'t detect Flash! Consider installing <a href="https://ruffle.rs/" class="redlink">Ruffle</a> before continuing.<br><br></span>';}
+function FlashEnabled()
+{
+  var flash = navigator.plugins.namedItem('Shockwave Flash');
+  if (!flash) {return 0;}
+  else {return 1;}
+}
+/*Check date and generate splash*/
 function createsplash() {
     var div=document.getElementById('splash');
     if (month==11) { /*December*/
@@ -74,10 +89,12 @@ function createsplash() {
         div.innerHTML=(quotes[rand]);
     }
 }
+/*Do a barrel roll!*/
 function spin() {
     document.getElementById("html").classList.add("roll");
     setTimeout("document.body.classList.toggle('roll');", 4000);
 }
+/*Change themes*/
 function changethemetolight() {
     var spinner = document.getElementById('style');
     spinner.innerHTML = '<link rel=stylesheet href="/swf/css/light.css">';
@@ -91,4 +108,38 @@ function changethemetodark() {
     var lighticon = document.getElementById('bulblight')
     lighticon.setAttribute("src","/swf/images/darkbulb.svg")
     lighticon.setAttribute("onclick","changethemetolight(),clicksound()")
+}
+/*Clock for homepage*/
+function clock() {
+    var d = new Date();
+    var n = d.toLocaleString([], { hour12: true});
+    document.getElementById("clock").innerHTML = n;
+    setInterval(clock, 500)
+}
+/*"Developer" mode*/
+var dev = document.getElementById('dev');
+var button = document.getElementById('ver');
+function oneclick() {
+    dev.innerHTML='You are 4 steps away from becoming a developer!';
+    button.innerHTML='<button class="button" onclick="oneclick2()">ver. 7.4.4</button>';
+}
+function oneclick2() {
+    dev.innerHTML='You are 3 steps away from becoming a developer!';
+    button.innerHTML='<button class="button" onclick="oneclick3()">ver. 7.4.4</button>';
+}
+function oneclick3() {
+    dev.innerHTML='You are 2 steps away from becoming a developer!';
+    button.innerHTML='<button class="button" onclick="oneclick4()">ver. 7.4.4</button>';
+}
+function oneclick4() {
+    dev.innerHTML='You are 1 step away from becoming a developer!';
+    button.innerHTML='<button class="button" onclick="oneclick5()">ver. 7.4.4</button>';
+}
+function oneclick5() {
+    dev.innerHTML='You are now a developer! <a href="https://github.com/Nemu64/The-Future-was-Flash-TFwF" class="smallwhitelink">Developer mode</a>.';
+    button.innerHTML='<button class="button" onclick="oneclick6()">ver. 7.4.4</button>';
+}
+function oneclick6() {
+    dev.innerHTML='No need, you\'re already a developer! <a href="https://github.com/Nemu64/The-Future-was-Flash-TFwF" class="smallwhitelink">Developer mode</a>.';
+    button.innerHTML='<button class="button" disabled=true onclick="oneclick6()">ver. 7.4.4</button>';
 }
