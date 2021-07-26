@@ -2,6 +2,7 @@ console.log('What are you doing? Looking for secrets? Don’t stick your nose wh
 var date=new Date();
 var month=date.getMonth();
 var day=date.getDate();
+var div=document.getElementById('splash');
 /*Play sound when changing themes*/
 function clicksound() {
     document.getElementById("click").play();
@@ -17,8 +18,7 @@ function FlashEnabled()
   else {return 1;}
 }
 /*Check date and generate splash*/
-function createsplash() {
-    var div=document.getElementById('splash');
+function splashes() {
     if (month==11) { /*December*/
         if (day==18) {
             div.innerHTML='Happy Birthday Nemu!';
