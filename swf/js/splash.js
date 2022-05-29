@@ -113,7 +113,7 @@ var button = document.getElementById('ver');
 var clicktxt = ['You are 1 step away from becoming a developer!', 'You are now a developer! <a href="https://github.com/Nemu64/The-Future-was-Flash-TFwF" class="smallwhitelink">Developer mode</a>.', 'No need, you\'re already a developer! <a href="https://github.com/Nemu64/The-Future-was-Flash-TFwF" class="smallwhitelink">Developer mode</a>.']
 var clickcount = 5;
 function oneclick() {
-    if (clickcount > 2) {dev.innerHTML = String("You are " + clickcount - 1 + "steps away from becoming a developer")}
+    if (clickcount > 2) {dev.innerHTML = "You are " + String(clickcount - 1) + "steps away from becoming a developer"}
     else if (clickcount > 1) {dev.innerHTML = clicktxt[0]}
     else if (clickcount > 0) {dev.innerHTML = clicktxt[1]}
     else if (clickcount <= 0) {dev.innerHTML = clicktxt[2]}
