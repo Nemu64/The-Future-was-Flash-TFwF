@@ -82,7 +82,7 @@ function clicksound() {
 }
 /*Detect if Flash is installed and displat a warning if it's not*/
 var div = document.getElementById('FlashDetect');
-if(navigator.plugins.namedItem('Shockwave Flash')) {
+if(!navigator.plugins.namedItem('Shockwave Flash')) {
     div.innerHTML='<span style="color:red;">Flash doesn\'t appear to be installed! Consider installing <a href="https://ruffle.rs/" class="redlink" style="text-decoration: underline">Ruffle</a> before continuing.<br><br></span>';
 }
 /*Do a barrel roll!*/
