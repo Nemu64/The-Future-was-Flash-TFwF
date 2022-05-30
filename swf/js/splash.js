@@ -30,6 +30,9 @@ else if (month==05) { /*June*/
     else if (day==3) {
         div.innerHTML='Happy Birthday Sega!';
     }
+    else if (day==19) {
+        div.innerHTML='Happy Birthday X11!'
+    }
 }
 else if (month==0) { /*January*/
     if (day==1) {
@@ -79,13 +82,8 @@ function clicksound() {
 }
 /*Detect if Flash is installed and displat a warning if it's not*/
 var div = document.getElementById('FlashDetect');
-if(FlashEnabled()){}
-else {div.innerHTML='<span style="color:red;">Flash doesn\'t appear to be installed! Consider installing <a href="https://ruffle.rs/" class="redlink" style="text-decoration: underline">Ruffle</a> before continuing.<br><br></span>';}
-function FlashEnabled()
-{
-  var flash = navigator.plugins.namedItem('Shockwave Flash');
-  if (!flash) {return 0;}
-  else {return 1;}
+if(navigator.plugins.namedItem('Shockwave Flash')) {
+    div.innerHTML='<span style="color:red;">Flash doesn\'t appear to be installed! Consider installing <a href="https://ruffle.rs/" class="redlink" style="text-decoration: underline">Ruffle</a> before continuing.<br><br></span>';
 }
 /*Do a barrel roll!*/
 function spin() {
