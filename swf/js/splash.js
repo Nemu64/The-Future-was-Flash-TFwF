@@ -61,6 +61,9 @@ else if (month==8) { /*September*/
     if (day==29) {
         div.innerHTML='Happy Birthday Nana!';
     }
+    if (day==6) {
+        div.innerHTML='Happy Birthday Sabrina!';
+    }
 }
 else if (month==9) { /*October*/
     if (day==25) {
