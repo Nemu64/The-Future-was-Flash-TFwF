@@ -120,10 +120,3 @@ function oneclick() {
     else if (clickcount <= 0) {dev.innerHTML = clicktxt[2]}
     clickcount--;
 }
-/*Clock for homepage
-function clock() {
-    var d = new Date();
-    var n = d.toLocaleString([], { hour12: true});
-    document.getElementById("clock").innerHTML = n;
-    setInterval(clock, 500)
-}*/
