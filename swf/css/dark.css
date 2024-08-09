@@ -1,19 +1,28 @@
-@font-face {
-  font-family: Verdana;
-  src: url(/swf/fonts/verdana.ttf);
+:root {
+    --text: #fff;
+    --bg: #181a1b;
+    --table-border: #2a2d2e;
+    --green-link: lime;
+    --yellow-link: yellow;
+    --red-link: red;
+    --should-invert: 0;
 }
 @font-face {
-  font-family: Verdana;
-  src: url(/swf/fonts/verdanab.ttf);
-  font-weight: bold;
+    font-family: Verdana;
+    src: url(/swf/fonts/verdana.ttf);
 }
 @font-face {
-  font-family: Sega;
-  src: url(/swf/fonts/sega.ttf);
+    font-family: Verdana;
+    src: url(/swf/fonts/verdanab.ttf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: Sega;
+    src: url(/swf/fonts/sega.ttf);
 }
 html {
-    background-color: #181a1b;
-    color: white;
+    background-color: var(--bg);
+    color: var(--text);
     text-align: center;
     text-decoration: none;
     font-family: 'Verdana', sans-serif;
@@ -21,16 +30,16 @@ html {
     font-weight: bold;
 }
 #bulblight {
-  filter: invert(0);
+    filter: invert(var(--should-invert));
 }
 table, th, td {
-  border: 1px solid #2a2d2e;
-  border-spacing: 0px;
-  width: auto;
+    border: 1px solid var(--table-border);
+    border-spacing: 0;
+    width: auto;
 }
 th:hover,td:hover {
-  border: 1px solid red;
-  animation: flash 7s infinite;
+    border: 1px solid red;
+    animation: flash 7s infinite;
 }
 footer {
     margin-top: 50px;
@@ -44,61 +53,61 @@ sngerr {
 }
 @-webkit-keyframes hvr-pulse-grow {
     to {
-      -webkit-transform: scale(1.1);
-      transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
     }
-  }
-  @keyframes hvr-pulse-grow {
+}
+@keyframes hvr-pulse-grow {
     to {
-      -webkit-transform: scale(1.1);
-      transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
     }
 }
 .greenlink {
-  color: lime;
-  text-decoration: none;
+    color: var(--green-link);
+    text-decoration: none;
 }
 .smallgreenlink {
-  color: lime;
-  font-size: medium;
-  text-decoration: none;
+    color: var(--green-link);
+    font-size: medium;
+    text-decoration: none;
 }
 .yellowlink {
-  color: yellow;
-  text-decoration: none;
+    color: var(--yellow-link);
+    text-decoration: none;
 }
 .smallyellowlink {
-  color: yellow;
-  font-size: medium;
-  text-decoration: none;
+    color: var(--yellow-link);
+    font-size: medium;
+    text-decoration: none;
 }
 .redlink {
-  color: red;
-  text-decoration: none;
+    color: var(--red-link);
+    text-decoration: none;
 }
 .smallredlink {
-  color: red;
-  font-size: medium;
-  text-decoration: none;
+    color: var(--red-link);
+    font-size: medium;
+    text-decoration: none;
 }
 .whitelink {
-  color: white;
-  text-decoration: none;
+    color: var(--text);
+    text-decoration: none;
 }
 .smallwhitelink {
-  color: white;
-  font-size: medium;
-  text-decoration: none;
+    color: var(--text);
+    font-size: medium;
+    text-decoration: none;
 }
 a:hover {
-  animation: linkflash 7s infinite;
-  background-color: transparent;
-  text-decoration: none;
+    animation: linkflash 7s infinite;
+    background-color: transparent;
+    text-decoration: none;
 }
 .splashbutton {
     border: none;
     display: inline-block;
-    color: white;
+    color: var(--text);
     background-color: transparent;
     text-decoration: none;
     font-weight: bold;
@@ -133,80 +142,80 @@ nsfwzoneend{
     color: red;
 }
 .button{
-  border: none;
-  display: inline-block;
-  color: white;
-  background-color: transparent;
-  text-align: right;
-  text-decoration: none;
-  font-size: medium;
-  font-weight: bold;
-  align-content: right;
+    border: none;
+    display: inline-block;
+    color: var(--text);
+    background-color: transparent;
+    text-align: right;
+    text-decoration: none;
+    font-size: medium;
+    font-weight: bold;
+    align-content: right;
 }
 .button2{
-  border: none;
-  display: inline-block;
-  color: white;
-  background-color: transparent;
-  text-align: center;
-  text-decoration: none;
-  font-size: inherit;
-  font-weight: inherit;
-  align-content: center;
+    border: none;
+    display: inline-block;
+    color: var(--text);
+    background-color: transparent;
+    text-align: center;
+    text-decoration: none;
+    font-size: inherit;
+    font-weight: inherit;
+    align-content: center;
 }
 .heart {
-  background-color: transparent;
-  display: inline-block;
-  position: relative;
-  animation: animateHeart 1.2s infinite;
+    background-color: transparent;
+    display: inline-block;
+    position: relative;
+    animation: animateHeart 1.2s infinite;
 }
 @keyframes animateHeart {
-  0% {
-    transform: scale(0.8);
-  }
-  5% {
-    transform: scale(0.9);
-  }
-  10% {
-    transform: scale(0.8);
-  }
-  15% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(0.8);
-  }
-  100% {
-    transform: scale(0.8);
-  }
+    0% {
+        transform: scale(0.8);
+    }
+    5% {
+        transform: scale(0.9);
+    }
+    10% {
+        transform: scale(0.8);
+    }
+    15% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.8);
+    }
+    100% {
+        transform: scale(0.8);
+    }
 }
 @keyframes flash {
-  20% {border-color: orange;}
-  40% {border-color: yellow;}
-  60% {border-color: green;}
-  80% {border-color: blue;}
-  90% {border-color: purple;}
+    20% {border-color: orange;}
+    40% {border-color: yellow;}
+    60% {border-color: green;}
+    80% {border-color: blue;}
+    90% {border-color: purple;}
 }
 @keyframes linkflash {
-  16% {color: red}
-  32% {color: orange;}
-  48% {color: yellow;}
-  64% {color: green;}
-  80% {color: blue;}
-  100% {color: purple;}
+    16% {color: red}
+    32% {color: orange;}
+    48% {color: yellow;}
+    64% {color: green;}
+    80% {color: blue;}
+    100% {color: purple;}
 }
 @keyframes roll {
-  from{transform: rotate(0deg)}
-  to{transform: rotate(360deg)}
+    from{transform: rotate(0deg)}
+    to{transform: rotate(360deg)}
 }
 .roll {
-  -moz-animation-name: roll;
-  -moz-animation-duration: 4s;
-  -moz-animation-iteration-count: 1;
-  -webkit-animation-name: roll;
-  -webkit-animation-duration: 4s;
-  -webkit-animation-iteration-count: 1;
-  animation-name: roll;
-  animation-duration: 4s;
-  animation-iteration-count: 1;
+    -moz-animation-name: roll;
+    -moz-animation-duration: 4s;
+    -moz-animation-iteration-count: 1;
+    -webkit-animation-name: roll;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-iteration-count: 1;
+    animation-name: roll;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
 }
