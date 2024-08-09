@@ -102,7 +102,7 @@ function spin() {
 /*Change themes*/
 function changetheme() {
     var currentTheme = document.getElementById('style');
-    if (getComputedStyle(document.querySelector(":root")).getPropertyValue("color") == "#fff") {
+    if (getComputedStyle(document.querySelector(":root")).getPropertyValue("--text") == "#fff") {
         currentTheme.innerHTML = '<link rel=stylesheet href="/swf/css/light.css">';
     }
     else {
