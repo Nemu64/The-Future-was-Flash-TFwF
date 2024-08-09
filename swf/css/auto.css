@@ -5,7 +5,7 @@
     --green-link: lime;
     --yellow-link: yellow;
     --red-link: red;
-    --should_invert: 1;
+    --should-invert: 1;
 }
 @media (prefers-color-scheme: light) {
     :root {
@@ -15,6 +15,7 @@
         --green-link: forestgreen;
         --yellow-link: gold;
         --red-link: red;
+        --should-invert: 0;
     }
 }
 
