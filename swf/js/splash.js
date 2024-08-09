@@ -102,7 +102,7 @@ function spin() {
 /*Change themes*/
 function changetheme() {
     var currentTheme = document.getElementById('style');
-    if (currentTheme.innerHTML.includes('dark')) {
+    if (document.body.style.color === "#000") {
         currentTheme.innerHTML = '<link rel=stylesheet href="/swf/css/light.css">';
     }
     else {
