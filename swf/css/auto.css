@@ -1,6 +1,230 @@
 @media (prefers-color-scheme: dark) {
-    import url("dark.css");
+    :root {
+        --text: #fff;
+        --bg: #181a1b;
+        --table-border: #2a2d2e;
+        --green-link: lime;
+        --yellow-link: yellow;
+        --red-link: red;
+    }
 }
 @media (prefers-color-scheme: light) {
-    import url("light.css");
+    :root {
+        --text: #000;
+        --bg: rgb(249,249,250);
+        --table-border: #2a2d2e;
+        --green-link: forestgreen;
+        --yellow-link: gold;
+        --red-link: red;
+    }
+}
+
+@font-face {
+    font-family: Verdana;
+    src: url(/swf/fonts/verdana.ttf);
+}
+@font-face {
+    font-family: Verdana;
+    src: url(/swf/fonts/verdanab.ttf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: Sega;
+    src: url(/swf/fonts/sega.ttf);
+}
+html {
+    background-color: var(--bg);
+    color: var(--text);
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Verdana', sans-serif;
+    font-size: xx-large;
+    font-weight: bold;
+}
+table, th, td {
+    border: 1px solid var(--table-border);
+    border-spacing: 0;
+    width: auto;
+}
+th:hover,td:hover {
+    border: 1px solid red;
+    animation: flash 7s infinite;
+}
+footer {
+    margin-top: 50px;
+    font-size: medium;
+    font-family: 'Verdana', sans-serif;
+}
+sngerr {
+    margin-top: 50px;
+    font-size: inherit;
+    font-family: 'Verdana', sans-serif;
+}
+@-webkit-keyframes hvr-pulse-grow {
+    to {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+}
+@keyframes hvr-pulse-grow {
+    to {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+}
+.greenlink {
+    color: var(--green-link);
+    text-decoration: none;
+}
+.smallgreenlink {
+    color: var(--green-link);
+    font-size: medium;
+    text-decoration: none;
+}
+.yellowlink {
+    color: var(--yellow-link);
+    text-decoration: none;
+}
+.smallyellowlink {
+    color: var(--yellow-link);
+    font-size: medium;
+    text-decoration: none;
+}
+.redlink {
+    color: var(--red-link);
+    text-decoration: none;
+}
+.smallredlink {
+    color: var(--red-link);
+    font-size: medium;
+    text-decoration: none;
+}
+.whitelink {
+    color: var(--text);
+    text-decoration: none;
+}
+.smallwhitelink {
+    color: var(--text);
+    font-size: medium;
+    text-decoration: none;
+}
+a:hover {
+    animation: linkflash 7s infinite;
+    background-color: transparent;
+    text-decoration: none;
+}
+.splashbutton {
+    border: none;
+    display: inline-block;
+    color: var(--text);
+    background-color: transparent;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: xx-large;
+    text-align: center;
+}
+.hvr-pulse-grow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-animation-name: hvr-pulse-grow;
+    animation-name: hvr-pulse-grow;
+    -webkit-animation-duration: 0.45s;
+    animation-duration: 0.45s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+nsfwzonestart{
+    border-top: 3px solid red;
+    text-align: center;
+    color: red;
+}
+nsfwzoneend{
+    border-bottom: 3px solid red;
+    text-align: center;
+    color: red;
+}
+.button{
+    border: none;
+    display: inline-block;
+    color: var(--text);
+    background-color: transparent;
+    text-align: right;
+    text-decoration: none;
+    font-size: medium;
+    font-weight: bold;
+    align-content: right;
+}
+.button2{
+    border: none;
+    display: inline-block;
+    color: var(--text);
+    background-color: transparent;
+    text-align: center;
+    text-decoration: none;
+    font-size: inherit;
+    font-weight: inherit;
+    align-content: center;
+}
+.heart {
+    background-color: transparent;
+    display: inline-block;
+    position: relative;
+    animation: animateHeart 1.2s infinite;
+}
+@keyframes animateHeart {
+    0% {
+        transform: scale(0.8);
+    }
+    5% {
+        transform: scale(0.9);
+    }
+    10% {
+        transform: scale(0.8);
+    }
+    15% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.8);
+    }
+    100% {
+        transform: scale(0.8);
+    }
+}
+@keyframes flash {
+    20% {border-color: orange;}
+    40% {border-color: yellow;}
+    60% {border-color: green;}
+    80% {border-color: blue;}
+    90% {border-color: purple;}
+}
+@keyframes linkflash {
+    16% {color: red}
+    32% {color: orange;}
+    48% {color: yellow;}
+    64% {color: green;}
+    80% {color: blue;}
+    100% {color: purple;}
+}
+@keyframes roll {
+    from{transform: rotate(0deg)}
+    to{transform: rotate(360deg)}
+}
+.roll {
+    -moz-animation-name: roll;
+    -moz-animation-duration: 4s;
+    -moz-animation-iteration-count: 1;
+    -webkit-animation-name: roll;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-iteration-count: 1;
+    animation-name: roll;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
 }
