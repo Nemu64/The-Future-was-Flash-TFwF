@@ -100,6 +100,15 @@ function spin() {
     setTimeout("document.getElementById(\"html\").classList.remove(\"roll\");", 4000);
 }
 /*Change themes*/
+function changetheme() {
+    var currentTheme = document.getElementById('style');
+    if (currentTheme.getAttribute('href') == '/swf/css/dark.css') {
+        currentTheme.innerHTML = '<link rel=stylesheet href="/swf/css/light.css">';
+    }
+    else {
+        currentTheme.innerHTML = '<link rel=stylesheet href="/swf/css/dark.css">';
+    }
+}
 function changethemetolight() {
     var spinner = document.getElementById('style');
     spinner.innerHTML = '<link rel=stylesheet href="/swf/css/light.css">';
