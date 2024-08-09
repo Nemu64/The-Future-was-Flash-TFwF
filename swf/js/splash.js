@@ -4,14 +4,11 @@ var month=date.getMonth();
 var day=date.getDate();
 let div = document.getElementById('splash');
 window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
-    switch (event.matches) {
-        case "dark":
-            changethemetodark();
-            break;
-        case "light":
-        changethemetolight();
-        break;
-    }});
+    if (event.matches) {
+        changethemetodark();
+    }
+    else changethemetolight();
+});
 /*Check date and generate splash*/
 if (month==11) { /*December*/
     if (day==18) {
