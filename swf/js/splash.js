@@ -101,6 +101,7 @@ function spin() {
 }
 /*Change themes*/
 function changetheme() {
+    var currentTheme = document.getElementById('style');
     if (document.body.style.color === "#000") {
         currentTheme.innerHTML = '<link rel=stylesheet href="/swf/css/light.css">';
     }
@@ -109,12 +110,12 @@ function changetheme() {
     }
 }
 function changethemetolight() {
-    var spinner = document.getElementById('style');
-    spinner.innerHTML = '<link rel=stylesheet href="/swf/css/light.css">';
+    var currentTheme = document.getElementById('style');
+    currentTheme.innerHTML = '<link rel=stylesheet href="/swf/css/light.css">';
 }
 function changethemetodark() {
-    const spinner = document.getElementById('style');
-    spinner.innerHTML = '<link rel=stylesheet href="/swf/css/dark.css">';
+    var currentTheme = document.getElementById('style');
+    currentTheme.innerHTML = '<link rel=stylesheet href="/swf/css/dark.css">';
 }
 /*"Developer" mode*/
 const dev = document.getElementById('dev');
