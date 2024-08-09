@@ -3,9 +3,6 @@ var date=new Date();
 var month=date.getMonth();
 var day=date.getDate();
 let div = document.getElementById('splash');
-if (window.matchMedia && !window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    changethemetolight();
-}
 window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
     if (event.matches) {
         changethemetodark();
