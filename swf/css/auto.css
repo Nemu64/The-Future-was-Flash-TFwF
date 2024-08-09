@@ -1,12 +1,10 @@
-@media (prefers-color-scheme: dark) {
-    :root {
-        --text: #fff;
-        --bg: #181a1b;
-        --table-border: #2a2d2e;
-        --green-link: lime;
-        --yellow-link: yellow;
-        --red-link: red;
-    }
+:root {
+    --text: #fff;
+    --bg: #181a1b;
+    --table-border: #2a2d2e;
+    --green-link: lime;
+    --yellow-link: yellow;
+    --red-link: red;
 }
 @media (prefers-color-scheme: light) {
     :root {
