@@ -103,16 +103,10 @@ function spin() {
 function changethemetolight() {
     var spinner = document.getElementById('style');
     spinner.innerHTML = '<link rel=stylesheet href="/swf/css/light.css">';
-    var lighticon = document.getElementById('bulblight')
-    lighticon.setAttribute("src","/swf/images/lightbulb.svg")
-    lighticon.setAttribute("onclick","changethemetodark(),clicksound()")
 }
 function changethemetodark() {
     const spinner = document.getElementById('style');
     spinner.innerHTML = '<link rel=stylesheet href="/swf/css/dark.css">';
-    const lighticon = document.getElementById('bulblight');
-    lighticon.setAttribute("src","/swf/images/darkbulb.svg")
-    lighticon.setAttribute("onclick","changethemetolight(),clicksound()")
 }
 /*"Developer" mode*/
 const dev = document.getElementById('dev');
