@@ -109,9 +109,11 @@ function changetheme() {
     var currentTheme = document.getElementById('style');
     if (getComputedStyle(document.querySelector(":root")).getPropertyValue("--text") == "#fff") {
         currentTheme.innerHTML = '<link rel=stylesheet href="/swf/css/light.css">';
+        document.cookie = "darkmode=false";
     }
     else {
         currentTheme.innerHTML = '<link rel=stylesheet href="/swf/css/dark.css">';
+        document.cookie = "darkmode=true";
     }
 }
 function changethemetolight() {
