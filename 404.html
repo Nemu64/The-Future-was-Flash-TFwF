@@ -7,19 +7,19 @@
     <body>
         404 ← That's an error!
         <br><br>
-        We searched high and low.<br>Unfortunately, the page you were looking for couldn't be found.
-        <br>
+        Sorry, the page you requested cannot be found.<br>The URL may be misspelled or the page you're looking for is no longer available.
+        <br><br>
         <button type="button" class="info">▼ More info ▼</button>
         <div class="content">
           <p>The document you requested couldn't be found. It may have been moved or deleted.<br><br>
             What happened: 404 (Page not found)<br>
-            Where: <script>var url = window.location.href;var string = url.split('.com');document.write('"' + string[1] + '"');</script><noscript>Unknown</noscript><br><br>
+            Where: <script>document.write('"' + window.location.href.split('.com')[1] + '"');</script><noscript>Unknown</noscript><br><br>
             That's all we know.
           </p></div>
         <br>
         <script src="/swf/js/splasherror.js" type="text/javascript" charset="UTF-8"></script><noscript>Witty comment unavailable :( - Is Javascript disabled?</noscript>
           <br><br>
-          <a href="/swf">Return home</a> or <a href="https://forms.gle/AdDZAnHT2qRP3fxB8">Report an error</a>
+          <a href="/swf">Return home</a>
           </body>
 </html>
 <style>
@@ -92,19 +92,3 @@ a:visited {
     }
 </script>
 <script>console.log('Tried to read nonexistent data!');</script>
-<!-- Matomo -->
-<script type="text/javascript">
-  var _paq = window._paq = window._paq || [];
-  _paq.push(["setCookieDomain", "*.ipxforever.com"]);
-  _paq.push(['trackPageView']);
-  _paq.push(['enableLinkTracking']);
-  (function() {
-    var u="//ipxforever.com/developer/analytics/";
-    _paq.push(['setTrackerUrl', u+'matomo.php']);
-    _paq.push(['setSiteId', '1']);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-  })();
-</script>
-<noscript><p><img src="//ipxforever.com/developer/analytics/matomo.php?idsite=1&amp;rec=1" style="border:0;" alt="" /></p></noscript>
-<!-- End Matomo Code -->

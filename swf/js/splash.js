@@ -9,6 +9,15 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', eve
     }
     else changethemetolight();
 });
+if (document.cookie == "") {
+    document.cookie = "darkmode=" + window.matchMedia('(prefers-color-scheme: dark)').matches;
+}
+else {
+    if (document.cookie == "darkmode=true") {
+        changethemetodark();
+    }
+    else changethemetolight();
+}
 /*Check date and generate splash*/
 if (month==11) { /*December*/
     if (day==18) {
