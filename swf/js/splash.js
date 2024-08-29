@@ -13,10 +13,12 @@ if (document.cookie == "") {
     document.cookie = "darkmode=" + window.matchMedia('(prefers-color-scheme: dark)').matches;
 }
 else {
-    if (document.cookie == "darkmode=true") {
+    if (document.cookie == "darkmode=true" && getComputedStyle(document.querySelector(":root")).getPropertyValue("--text") == "#fff") {
         changethemetodark();
     }
-    else changethemetolight();
+    else if (document.cookie == "darkmode=false" && getComputedStyle(document.querySelector(":root")).getPropertyValue("--text") == "#000") {
+        changethemetolight();
+    }
 }
 /*Check date and generate splash*/
 if (month==11) { /*December*/
