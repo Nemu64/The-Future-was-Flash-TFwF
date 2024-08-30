@@ -10,16 +10,11 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', eve
     }
     else changethemetolight();
 });
-if (document.cookie == "") {
-    document.cookie = "darkmode=" + window.matchMedia('(prefers-color-scheme: dark)').matches;
+if (document.cookie == "darkmode=true" && getComputedStyle(document.querySelector(":root")).getPropertyValue("--text") == "#fff") {
+    changethemetodark();
 }
-else {
-    if (document.cookie == "darkmode=true" && getComputedStyle(document.querySelector(":root")).getPropertyValue("--text") == "#fff") {
-        changethemetodark();
-    }
-    else if (document.cookie == "darkmode=false" && getComputedStyle(document.querySelector(":root")).getPropertyValue("--text") == "#000") {
-        changethemetolight();
-    }
+else if (document.cookie == "darkmode=false" && getComputedStyle(document.querySelector(":root")).getPropertyValue("--text") == "#000") {
+    changethemetolight();
 }
 /*Check date and generate splash*/
 if (month==11) { /*December*/
