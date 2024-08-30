@@ -148,9 +148,9 @@ nsfwzoneend{
     background-color: transparent;
     text-align: right;
     text-decoration: none;
-    font-size: medium;
     font-weight: bold;
-    align-content: right;
+    font-size: smaller;
+    vertical-align: sub;
 }
 .button2{
     border: none;
