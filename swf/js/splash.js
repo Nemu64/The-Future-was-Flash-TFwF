@@ -10,10 +10,10 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', eve
     }
     else changethemetolight();
 });
-if (document.cookie == "darkmode=true" && getComputedStyle(document.querySelector(":root")).getPropertyValue("--text") == "#fff") {
+if (document.cookie == "darkmode=true" && getComputedStyle(document.querySelector(":root")).getPropertyValue("--text") == "#000") {
     changethemetodark();
 }
-else if (document.cookie == "darkmode=false" && getComputedStyle(document.querySelector(":root")).getPropertyValue("--text") == "#000") {
+else if (document.cookie == "darkmode=false" && getComputedStyle(document.querySelector(":root")).getPropertyValue("--text") == "#fff") {
     changethemetolight();
 }
 /*Check date and generate splash*/
