@@ -107,11 +107,11 @@ function changetheme() {
     var currentTheme = document.getElementById('style');
     if (getComputedStyle(document.querySelector(":root")).getPropertyValue("--text") == "#fff") {
         currentTheme.innerHTML = '<link rel=stylesheet href="/swf/css/light.css">';
-        document.cookie = "darkmode=false; max-age=" + 31536000;
+        document.cookie = "darkmode=false; expires=" + new Date(new Date().getTime() + 604800000).toUTCString();
     }
     else {
         currentTheme.innerHTML = '<link rel=stylesheet href="/swf/css/dark.css">';
-        document.cookie = "darkmode=true; max-age=" + 31536000;
+        document.cookie = "darkmode=true; expires=" + new Date(new Date().getTime() + 604800000).toUTCString();
     }
 }
 function changethemetolight() {
