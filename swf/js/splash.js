@@ -91,16 +91,15 @@ function splash(id) {
     if (div.innerHTML == "..." && id == null) {
         const length = quotes.length;
         const rand = Math.round(Math.random() * (length - 1));
-        console.log("Have " + length + " splashes. Chose " + rand + ".");
         div.innerHTML = quotes[rand];
+        return console.log("Have " + length + " splashes. Chose " + rand + ".");
     }
     else {
         if (quotes[id] == undefined) {
-            console.log("Splash " + id + " does not exist!");
-            return;
+            return console.log("Splash " + id + " does not exist!");
         }
         div.innerHTML = quotes[id];
-        console.log("Set splash to " + quotes[id] + ".");
+        return console.log("Set splash to " + quotes[id] + ".");
     }
 }
 splash(null);
