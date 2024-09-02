@@ -105,6 +105,12 @@ function spin() {
 /*Change themes*/
 function changetheme() {
     var currentTheme = document.getElementById('style');
+    var click = document.createElement("audio");
+    click.setAttribute("id", "click");
+    click.setAttribute("src", "/swf/audio/click.mp3");
+    click.setAttribute("autoplay", "true");
+    click.setAttribute("onended", "this.remove()");
+    document.body.appendChild(click);
     if (getComputedStyle(document.querySelector(":root")).getPropertyValue("--text") == "#fff") {
         currentTheme.innerHTML = '<link rel=stylesheet href="/swf/css/light.css">';
         document.cookie = "darkmode=false; expires=" + new Date(new Date().getTime() + 604800000).toUTCString();
@@ -128,7 +134,7 @@ const button = document.getElementById('ver');
 var clicktxt = ['You are 1 step away from becoming a developer!', 'You are now a developer! <a href="https://github.com/Nemu64/The-Future-was-Flash-TFwF" class="smallwhitelink">Developer mode</a>.', 'No need, you\'re already a developer! <a href="https://github.com/Nemu64/The-Future-was-Flash-TFwF" class="smallwhitelink">Developer mode</a>.']
 var clickcount = 5;
 function oneclick() {
-    if (clickcount > 2) {dev.innerHTML = "You are " + String(clickcount - 1) + " steps away from becoming a developer"}
+    if (clickcount > 2) {dev.innerHTML = "You are " + String(clickcount - 1) + " steps away from becoming a developer!"}
     else if (clickcount > 1) {dev.innerHTML = clicktxt[0]}
     else if (clickcount > 0) {dev.innerHTML = clicktxt[1]}
     else if (clickcount <= 0) {dev.innerHTML = clicktxt[2]}
