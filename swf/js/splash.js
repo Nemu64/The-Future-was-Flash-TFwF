@@ -97,6 +97,7 @@ function splash(id) {
     else {
         if (quotes[id] == undefined) {
             console.log("Splash " + id + " does not exist!");
+            return;
         }
         div.innerHTML = quotes[id];
         console.log("Set splash to " + quotes[id] + ".");
