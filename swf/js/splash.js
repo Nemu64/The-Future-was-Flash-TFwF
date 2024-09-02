@@ -95,13 +95,11 @@ function splash(id) {
         div.innerHTML = quotes[rand];
     }
     else {
-        try {
-            div.innerHTML = quotes[id];
+        if (quotes[id] == undefined) {
+            console.log("Splash " + id + " does not exist!");
         }
-        catch (e) {
-            console.log("Splash error: " + e);
-            splash(null);
-        }
+        div.innerHTML = quotes[id];
+        console.log("Set splash to " + quotes[id] + ".");
     }
 }
 splash(null);
