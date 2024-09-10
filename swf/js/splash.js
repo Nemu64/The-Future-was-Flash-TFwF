@@ -96,6 +96,7 @@ function splash(id) {
     }
     else {
         if (quotes[id] == undefined) {
+            div.innerHTML = "MissingNo.";
             return console.log("Splash " + id + " does not exist!");
         }
         div.innerHTML = quotes[id];
