@@ -114,7 +114,7 @@ function spin() {
     document.getElementById("html").classList.add("roll");
     setTimeout(function() {
         document.getElementById("html").classList.remove("roll");
-    }, 1000);
+    }, 4000);
 }
 /*Change themes*/
 function changetheme() {
