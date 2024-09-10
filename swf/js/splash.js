@@ -110,8 +110,11 @@ function clicksound() {
 }
 /*Do a barrel roll!*/
 function spin() {
-    document.getElementById("html").style.animationPlayState = "running";
-    setTimeout(function() {document.getElementById("html").style.animationPlayState = "paused";}, 4000);
+    if (document.getElementById("html").classList.contains("roll")) return;
+    document.getElementById("html").classList.add("roll");
+    setTimeout(function() {
+        document.getElementById("html").classList.remove("roll");
+    }, 1000);
 }
 /*Change themes*/
 function changetheme() {

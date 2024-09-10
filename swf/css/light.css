@@ -209,5 +209,13 @@ nsfwzoneend{
     to{transform: rotate(360deg)}
 }
 .roll {
-    animation: roll 4s 1 paused;
+    -moz-animation-name: roll;
+    -moz-animation-duration: 4s;
+    -moz-animation-iteration-count: 1;
+    -webkit-animation-name: roll;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-iteration-count: 1;
+    animation-name: roll;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
 }
