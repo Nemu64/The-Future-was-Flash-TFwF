@@ -110,7 +110,8 @@ function clicksound() {
 }
 /*Do a barrel roll!*/
 function spin() {
-    document.getElementById("html").style.animationIterationCount += 1;
+    document.getElementById("html").style.animationPlayState = "running";
+    setTimeout(function() {document.getElementById("html").style.animationPlayState = "paused";}, 4000);
 }
 /*Change themes*/
 function changetheme() {
