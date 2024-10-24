@@ -35,7 +35,7 @@ TLS 1.3 (if supported)!
 HTTP/3 (if supported)!
 CSS3 (if supported)!
 Tor users welcome!
-Javascript (if supported)!<br><sup style="vertical-align: super;font-size: 16px;">(if you're seeing this, it is!)</sup>
+Javascript (if supported)!
 Adobe Flash!
 Why, hello there!
 Put that cookie down!
