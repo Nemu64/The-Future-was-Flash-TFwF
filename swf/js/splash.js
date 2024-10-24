@@ -103,7 +103,6 @@ function splash(id) {
         return console.log("Set splash to " + quotes[id] + ".");
     }
 }
-splash(-1);
 /*Play sound when changing themes*/
 function clicksound() {
     document.getElementById("click").play();
