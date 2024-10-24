@@ -97,4 +97,4 @@ Not really a stand-up job!
 The cake is a lie!
 Speling is hard!
 Not Netscape compatible!
-<span style="color: transparent; text-shadow: 0px 0px 7px color-mix(in srgb, var(--text) 60%, transparent);">Fog crept up as thick as soup!</span>'
+<span style="color: transparent; text-shadow: 0px 0px 7px color-mix(in srgb, var(--text) 60%, transparent);">Fog crept up as thick as soup!</span>

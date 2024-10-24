@@ -3,7 +3,7 @@
 header('Content-Type: text/html; charset=utf-8');
 
 // Read the splashes from the splashes.txt file (one splash per line)
-$splashesFile = '/js/splash.txt';
+$splashesFile = './js/splash.txt';
 $splashes = file($splashesFile, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
 
 // Function to parse a list of indices or ranges (e.g., "1-4,8,10")
