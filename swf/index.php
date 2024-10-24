@@ -66,7 +66,7 @@ $splash = $splashes[$splashIndex];
 $htmlTemplate = file_get_contents('index.html');
 
 // Replace the placeholder in the HTML with the splash
-$modifiedHtml = str_replace('&lt;&lt;&lt;WHAT!? THAT'S IMPOSSIBLE!&gt;&gt;&gt;', $splash, $htmlTemplate);
+$modifiedHtml = str_replace('&lt;&lt;&lt;WHAT!? THAT\'S IMPOSSIBLE!&gt;&gt;&gt;', $splash, $htmlTemplate);
 
 // Output the modified HTML
 echo $modifiedHtml;
