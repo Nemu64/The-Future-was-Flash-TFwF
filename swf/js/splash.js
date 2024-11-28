@@ -61,7 +61,8 @@ else if (month==10) { /*November*/
     if (day==20) {
         div.innerHTML='Happy Birthday Windows!';
     }
-    if (day==new Date(date.getFullYear(), 10, 1 + (3 - new Date(date.getFullYear(), 10, 1).getDay()) + 21).getDate()) {
+    /*Thanksgiving*/
+    if (day==(1 + (4 - (new Date(date.getFullYear(), date.getMonth(), 1)).getDay() + 7) % 7) + 21) {
         div.innerHTML='Happy Thanksgiving!';
     }
 }
