@@ -1,4 +1,4 @@
-console.log('What are you doing? Looking for secrets? Don’t stick your nose where it doesn\'t belong. Or you might find something you DON’T like... Hee hee hee.');
+console.log('What are you doing? Looking for secrets? Don\'t stick your nose where it doesn\'t belong. Or you might find something you DON\'T like... Hee hee hee.');
 var date=new Date();
 var month=date.getMonth();
 var day=date.getDate();
